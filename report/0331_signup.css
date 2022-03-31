@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+}
+
+form{
+    border: 1px solid rgb(17, 10, 10);
+}
+
+form label{
+    display: table-cell;
+    border: 1px solid black;
+    width: 200px;
+    text-align: right;
+}
+
+form input{
+    display: table-cell;
+}
+
+form button{
+    position: relative;
+}
