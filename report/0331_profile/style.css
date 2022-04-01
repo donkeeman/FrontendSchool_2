@@ -1,0 +1,152 @@
+/* ---reset--- */
+
+body, p, ul{
+    /* inherit -> 부모에서 상속해서 초기화 */
+    /* initial -> 상속이 안 되는 요소들을 초기화할 때 */
+    /* unset -> 상속이 되는 요소는 inherit으로, 아닌 건 initial로 자동 결정, 그러나 IE에서 지원하지 않음 */
+    /* 그래서 IE에서도 초기화하려고 0으로 쓰는 것 */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2{
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: initial;
+    color: inherit;
+}
+
+/* ---decoration--- */
+
+body{
+    background-image: url(./images/background.gif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.wrapper{
+    background-color: #ddd;
+    width: 800px;
+    /* block level element의 가로로 가운데 정렬 방법 */
+    /*
+    margin-left: auto;
+    margin-right: auto;
+    */
+    /* 위와 아래는 같음 */
+    margin: 100px auto;
+}
+
+.header{
+    background-image: url(./images/cover04.png);
+    background-size: cover;
+    height: auto;
+    /* inline element의 가로 가운데 정렬 방법 */
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+}
+
+.header h1{
+    font-size: 100px;
+}
+
+.header img.profile{
+    border: 10px solid white;
+    border-radius: 50%;
+}
+
+.header p{
+    border-top: 4px solid;
+    /* width 값을 컨텐츠 너비에 맞게 조정, 그러나 IE에서 지원 x */
+    /* width: fit-content; */
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+}
+
+.contents{
+    /* block끼리의 margin 병합 현상 방지 */
+    overflow: hidden;
+    /* display: flow-root; 는 IE지원 x */
+}
+
+.section{
+    background-repeat: no-repeat;
+    background-position: right 30px center;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.section h2{
+    color: darkgreen;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section.info{
+    background-image: url(./images/icon-information.png);
+}
+
+.section.skills{
+    background-image: url(./images/icon-skills.png);
+}
+
+.list li{
+    border-left: 5px solid #ddd;
+    padding: 2px 20px;
+}
+
+.list li:hover{
+    padding-left: 40px;
+    border-color: olivedrab;
+    color: olivedrab;
+}
+
+.footer{
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.icon{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    text-indent: -9999px;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    color: white;
+    /* 웹 이미지 성능 향상을 위해 여러 이미지가 합쳐진 하나의 큰 이미지로 만들고, 그것을 적절히 나눔*/    
+    background-image: url(./images/icons.png);
+    background-size: 144px 96px;
+}
+
+.icon.github{
+    background-color: black;
+    background-position: left top;
+}
+
+.icon.facebook{
+    background-color: #4267B2;
+    background-position: center top;
+}
+
+.icon.contact{
+    background-color: orangered;
+    background-position: right top;
+}
+
+.icon:hover{
+    background-position-y: bottom;
+}
