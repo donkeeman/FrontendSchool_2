@@ -2,9 +2,15 @@
 
 /* reset css */
 
-body, table, h1, p{
+body, table, h1, p, label{
     margin: 0;
     padding: 0;
+}
+
+fieldset{
+    margin: 0;
+    padding: 0;
+    border: none;
 }
 
 button{
@@ -19,12 +25,18 @@ body{
     font-size: 18px;
 }
 
+input, button, select{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: inherit;
+}
+
 .signupForm{
     background-color: white;
     padding: 50px 100px;
     border-radius: 30px;
-    width: fit-content;
+    width: 50%;
     margin: 1.5% auto;
+    text-align: center;
 }
 
 h1{
@@ -32,12 +44,21 @@ h1{
     margin-bottom: 20px;
 }
 
+.termField{
+    margin: 20px 0;
+    border-top: 2px solid lightgray;
+}
+
 .signupTable{
     margin-left: auto;
     margin-right: auto;
-    padding-top: 20px;
+    padding: 0;
     border-top: 2px solid lightgray;
     border-spacing: 20px;
+}
+
+.signupTable tr{
+    width: auto;
 }
 
 .labelSection{
@@ -45,17 +66,24 @@ h1{
     width: 35%;
 }
 
+.inputSection{
+    text-align: left;
+}
+
 .emailId{
-    width: 30%;
+    width: 32%;
+}
+
+.domain{
+    width: 32%;
+}
+
+.phoneIdNum{
+    width: 18%;
 }
 
 .phoneNumberMiddle, .phoneNumberLast{
-    width: 19%;
-}
-
-input, button, select{
-    font-family: 'Nanum Myeongjo', serif;
-    font-size: inherit;
+    width: 20%;
 }
 
 .confirmText{
@@ -81,4 +109,22 @@ button{
 .signupButton{
     width: 50%;
     padding: 20px 10px;
+}
+
+.terms{
+    padding: 5px 10px;
+    text-align: left;
+    border: 2px solid darkgray;
+    max-width: 100%;
+    height: 100px;
+    overflow: auto;
+}
+
+.agreement{
+    padding: 10px 5px;
+    text-align: right;
+}
+
+.agreement input[type="checkbox"]{
+    accent-color: green;
 }
