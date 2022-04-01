@@ -8,19 +8,101 @@
     <title>sign up</title>
 </head>
 <body>
-    <header>
-        <h1>회원 가입</h1>
-    </header>
-    <form action="0331.signup.html" method="post">
-        <label for="id">아이디</label>
-        <input type="text" name="id" id="userId">
-        <button>중복 확인</button>
-        <br>
-        <label for="pw">비밀번호</label>
-        <input type="text" name="pw" id="userPw">
-        <br>
-        <label for="pwConfirm">비밀번호 확인</label>
-        <input type="text" name="pw" id="userPw">
-    </form>
+    <section>
+        <form action="0331.signup.html" method="post" class="signupForm">
+            <header>
+                <h1>회원 가입</h1>
+            </header>
+            <table class="signupTable">
+                <tr>
+                    <td class="labelSection">
+                        아이디
+                    </td>
+                    <td class="inputSection">
+                        <input type="text" name="id" id="userId" required>
+                        <button class="doubleCheckButton">중복 확인</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="labelSection">
+                        비밀번호
+                    </td>
+                    <td class="inputSection">
+                        <input type="text" name="pw" id="userPw" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="labelSection">
+                        비밀번호 확인
+                    </td>
+                    <td class="inputSection">
+                        <input type="text" name="pwConfirm" id="userPwConfirm" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="labelSection">
+                        이름
+                    </td>
+                    <td class="inputSection">
+                        <input type="text" name="name" id="userName" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="labelSection">
+                        성별
+                    </td>
+                    <td class="inputSection">
+                        <label for="gender">남</label><input type="radio" name="gender" id="male" required>
+                        <label for="gender">여</label><input type="radio" name="gender" id="female" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="labelSection">
+                        이메일
+                    </td>
+                    <td class="inputSection">
+                        <input type="text" class="emailId" name="emailId" id="userEmailId">
+                        @
+                        <select name="domain" id="domainMenu">
+                            <option value="" selected>-------</option>
+                            <option value="gmail">gmail.com</option>
+                            <option value="naver">naver.com</option>
+                            <option value="daum">daum.net</option>
+                            <option value="kakao">kakao.com</option>
+                            <option value="nate">nate.com</option>
+                            <option value="outlook">outlook.com</option>
+                            <option value="msn">msn.com</option>
+                            <option value="etc">직접 입력</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="labelSection">
+                        연락처
+                    </td>
+                    <td class="inputSection">
+                        <select name="phoneIdNum" id="phoneIdNumMenu">
+                            <option value="010" selected>010</option>
+                            <option value="011">011</option>
+                            <option value="016">016</option>
+                            <option value="017">017</option>
+                            <option value="018">018</option>
+                            <option value="019">019</option>
+                        </select>
+                        -
+                        <input type="number" class="phoneNumberMiddle" name="phoneNumberMiddle" id="userphoneNumberMiddle">
+                        -
+                        <input type="number" class="phoneNumberMiddle" name="phoneNumberLast" id="userphoneNumberLast">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><p class="confirmText">위 내용으로 가입하시겠습니까?</p></td>
+                </tr>
+                <tr class="signupButtonRow">
+                    <td colspan="2"><button class="signupButton">회원가입</button></td>
+                </tr>
+            </table>
+        </form>
+    </section>
 </body>
 </html>

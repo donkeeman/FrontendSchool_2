@@ -1,22 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Nanum+Myeongjo&display=swap');
+
+/* reset css */
+
+body, table, h1, p{
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    border: none;
+}
+
+/* design */
+
 body{
+    background-color: yellowgreen;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 18px;
+}
+
+.signupForm{
+    background-color: white;
+    padding: 50px 100px;
+    border-radius: 30px;
+    width: fit-content;
+    margin: 1.5% auto;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signupTable{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    border-top: 2px solid lightgray;
+    border-spacing: 20px;
+}
+
+.labelSection{
+    text-align: right;
+    width: 35%;
+}
+
+.emailId{
+    width: 30%;
+}
+
+.phoneNumberMiddle, .phoneNumberLast{
+    width: 19%;
+}
+
+input, button, select{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: inherit;
+}
+
+.confirmText{
+    margin-top: 20px;
     text-align: center;
 }
 
-form{
-    border: 1px solid rgb(17, 10, 10);
+.signupButtonRow{
+    text-align: center;
 }
 
-form label{
-    display: table-cell;
-    border: 1px solid black;
-    width: 200px;
-    text-align: right;
+button{
+    background-color: yellowgreen;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
 }
 
-form input{
-    display: table-cell;
+.doubleCheckButton{
+    padding: 3px 10px;
 }
 
-form button{
-    position: relative;
+.signupButton{
+    width: 50%;
+    padding: 20px 10px;
 }
