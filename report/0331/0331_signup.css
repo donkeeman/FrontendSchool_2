@@ -13,14 +13,19 @@ fieldset{
     border: none;
 }
 
+input, button, select{
+    font-size: inherit;
+}
+
 button{
     border: none;
+    vertical-align: inherit;
 }
 
 /* design */
 
 body{
-    background-color: yellowgreen;
+    background-color: #20502e;
     font-family: 'Nanum Myeongjo', serif;
     font-size: 18px;
 }
@@ -31,34 +36,31 @@ input, button, select{
 }
 
 .signupForm{
-    background-color: white;
+    background-color: #FDFDFD;
     padding: 50px 100px;
-    border-radius: 30px;
+    border-radius: 10px;
     width: 50%;
     margin: 1.5% auto;
     text-align: center;
 }
 
-h1{
+.header{
     text-align: center;
     margin-bottom: 20px;
-}
-
-.termField{
-    margin: 20px 0;
-    border-top: 2px solid lightgray;
 }
 
 .signupTable{
     margin-left: auto;
     margin-right: auto;
-    padding: 0;
+    padding: 20px 0;
     border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
     border-spacing: 20px;
 }
 
 .signupTable tr{
     width: auto;
+    line-height: 0;
 }
 
 .labelSection{
@@ -68,6 +70,8 @@ h1{
 
 .inputSection{
     text-align: left;
+    vertical-align: top;
+    line-height: 0;
 }
 
 .emailId{
@@ -91,24 +95,18 @@ h1{
     text-align: center;
 }
 
-.signupButtonRow{
-    text-align: center;
-}
-
 button{
-    background-color: yellowgreen;
+    background-color: #20502e;
     font-weight: bold;
-    color: white;
+    color: #FDFDFD;
     cursor: pointer;
 }
 
 .doubleCheckButton{
-    padding: 3px 10px;
-}
-
-.signupButton{
-    width: 50%;
-    padding: 20px 10px;
+    font-size: 14px;
+    padding: 0.4em 1em;
+    border-radius: 5px;
+    margin-top: auto;
 }
 
 .terms{
@@ -118,13 +116,24 @@ button{
     max-width: 100%;
     height: 100px;
     overflow: auto;
+    background-color: white;
 }
 
 .agreement{
+    margin-right: 20px;
     padding: 20px 5px;
     text-align: right;
 }
 
-.agreement input[type="checkbox"]{
-    accent-color: green;
+.agreeCheck{
+    accent-color: #20502e;
+    transform: scale(1.5);
+}
+
+.signupButton{
+    width: 50%;
+    font-size: 20px;
+    margin: 20px 0;
+    padding: 1.5em 0;
+    border-radius: 5px;
 }

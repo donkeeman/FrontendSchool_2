@@ -12,14 +12,14 @@
         <form action="./0331_signup.html" class="signupForm">
             <fieldset class="informationField">
                 <header>
-                    <h1>회원 가입</h1>
+                    <h1 class="header">회원 가입</h1>
                 </header>
                 <table class="signupTable">
                     <tr>
                         <td class="labelSection">
                             아이디
                         </td>
-                        <td class="inputSection">
+                        <td class="inputSection idInput">
                             <input type="text" name="id" id="userId" required>
                             <button class="doubleCheckButton">중복 확인</button>
                         </td>
@@ -65,7 +65,7 @@
                             <input type="text" class="emailId" name="emailId" id="userEmailId">
                             @
                             <select class="domain" name="domain" id="domainMenu">
-                                <option value="" selected>-------</option>
+                                <option value="" selected>--------</option>
                                 <option value="gmail">gmail.com</option>
                                 <option value="naver">naver.com</option>
                                 <option value="daum">daum.net</option>
@@ -107,9 +107,9 @@
                 </div>
                 <div class="agreement">
                     <label for="agree">
-                        위 약관에 동의하고 가입하시겠습니까?
+                        위 약관에 동의하시겠습니까?
                     </label>
-                    <input type="checkbox" name="agree" id="termAgree">
+                    <input type="checkbox" class="agreeCheck" name="agree" id="agreeCheck">
                 </div>
             </fieldset>
             <button onclick="location.href='./0331_success.html'" class="signupButton">회원 가입</button>
