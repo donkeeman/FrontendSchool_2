@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
 /* reset css */
 
-body, table, h1, p, label{
+body, table, h1, input[type="text"], input[type="password"], p, label{
     margin: 0;
     padding: 0;
 }
@@ -13,8 +13,11 @@ fieldset{
     border: none;
 }
 
-input, button, select{
+button, select{
+    box-sizing: content-box;
     font-size: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 button{
@@ -26,68 +29,86 @@ button{
 
 body{
     background-color: #20502e;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Noto Sans KR', sans-serif;
     font-size: 18px;
 }
 
 input, button, select{
-    font-family: 'Nanum Myeongjo', serif;
-    font-size: inherit;
+    font: inherit;
 }
 
 .signupForm{
     background-color: #FDFDFD;
-    padding: 50px 100px;
+    padding: 3em 3em;
     border-radius: 10px;
     width: 50%;
     margin: 1.5% auto;
-    text-align: center;
 }
 
 .header{
     text-align: center;
-    margin-bottom: 20px;
+    font-size: 30px;
+    margin-bottom: 30px;
 }
 
 .signupTable{
+    table-layout: fixed;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px 0;
+    padding: 20px 100px;
     border-top: 2px solid lightgray;
     border-bottom: 2px solid lightgray;
     border-spacing: 20px;
-}
-
-.signupTable tr{
-    width: auto;
-    line-height: 0;
+    overflow: hidden;
 }
 
 .labelSection{
     text-align: right;
     width: 35%;
+    padding-right: 10px;
 }
 
 .inputSection{
     text-align: left;
-    vertical-align: top;
-    line-height: 0;
+    padding: 0;
+}
+
+.inputSection *{
+    vertical-align: middle;
+}
+
+.textAndPw{
+    width: 60%;
+}
+
+.genderLabel{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 3px 0;
+}
+
+.genderRadio{
+    display: inline-block;
+    accent-color: #20502e;
+    transform: scale(1.5);
+    margin-left: 10px;
+    margin-right: 20px;
 }
 
 .emailId{
-    width: 32%;
+    width: 130px;
 }
 
 .domain{
-    width: 32%;
+    width: auto;
 }
 
 .phoneIdNum{
-    width: 18%;
+    width: auto;
 }
 
 .phoneNumberMiddle, .phoneNumberLast{
-    width: 20%;
+    width: 100px;
 }
 
 .confirmText{
@@ -97,16 +118,18 @@ input, button, select{
 
 button{
     background-color: #20502e;
-    font-weight: bold;
+    font-weight: medium;
     color: #FDFDFD;
     cursor: pointer;
 }
 
 .doubleCheckButton{
+    display: inline-block;
     font-size: 14px;
-    padding: 0.4em 1em;
+    height: 100%;
+    padding: 0.3em 1em;
     border-radius: 5px;
-    margin-top: auto;
+    margin-left: 0.5em;
 }
 
 .terms{
@@ -120,20 +143,24 @@ button{
 }
 
 .agreement{
-    margin-right: 20px;
     padding: 20px 5px;
     text-align: right;
 }
 
+.agreement label{
+    margin: 0 10px;
+}
+
 .agreeCheck{
+    margin-left: auto;
     accent-color: #20502e;
     transform: scale(1.5);
 }
 
 .signupButton{
-    width: 50%;
-    font-size: 20px;
+    width: 100%;
+    font-size: 25px;
     margin: 20px 0;
-    padding: 1.5em 0;
+    padding: 1em 0;
     border-radius: 5px;
 }
