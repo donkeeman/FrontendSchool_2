@@ -31,6 +31,7 @@ body{
     background-color: #20502e;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 18px;
+    width: 100%;
 }
 
 input, button, select{
@@ -39,37 +40,42 @@ input, button, select{
 
 .signupForm{
     background-color: #FDFDFD;
-    padding: 3em 3em;
+    padding: 5% 10%;
     border-radius: 10px;
     width: 50%;
     margin: 1.5% auto;
 }
 
-.header{
+.informationField{
+    
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+}
+
+.signupHeader{
     text-align: center;
     font-size: 30px;
     margin-bottom: 30px;
 }
 
 .signupTable{
-    table-layout: fixed;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px 100px;
-    border-top: 2px solid lightgray;
-    border-bottom: 2px solid lightgray;
-    border-spacing: 20px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 2%;
+    border-spacing: 0 20px;
     overflow: hidden;
 }
 
 .labelSection{
     text-align: right;
-    width: 35%;
+    width: 30%;
     padding-right: 10px;
+    word-break: keep-all;
 }
 
 .inputSection{
     text-align: left;
+    width: 70%;
     padding: 0;
 }
 
@@ -77,8 +83,8 @@ input, button, select{
     vertical-align: middle;
 }
 
-.textAndPw{
-    width: 60%;
+.idInput, .pwInput, .nameInput{
+    width: 125px;
 }
 
 .genderLabel{
@@ -96,24 +102,15 @@ input, button, select{
 }
 
 .emailId{
-    width: 130px;
+    width: 90px;
 }
 
-.domain{
-    width: auto;
-}
-
-.phoneIdNum{
+.domain, .phoneIdNum{
     width: auto;
 }
 
 .phoneNumberMiddle, .phoneNumberLast{
-    width: 100px;
-}
-
-.confirmText{
-    margin-top: 20px;
-    text-align: center;
+    width: 80px;
 }
 
 button{
@@ -125,11 +122,16 @@ button{
 
 .doubleCheckButton{
     display: inline-block;
+    width: auto;
     font-size: 14px;
     height: 100%;
     padding: 0.3em 1em;
     border-radius: 5px;
     margin-left: 0.5em;
+}
+
+.termsHeader{
+    text-align: center;
 }
 
 .terms{
