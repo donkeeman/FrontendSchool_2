@@ -47,6 +47,10 @@ input, button, select{
     font: inherit;
 }
 
+input:placeholder-shown{
+    font-style: italic;
+}
+
 a{
     color: #20502e;
     text-decoration: underline;
@@ -60,7 +64,7 @@ a{
     margin: 1.5% auto;
 }
 
-.informationField, .successSignup{
+.informationField, .signinField,.successSignup{
     border-top: 2px solid lightgray;
     border-bottom: 2px solid lightgray;
 }
@@ -77,6 +81,15 @@ a{
     padding: 2%;
     border-spacing: 0 20px;
     overflow: hidden;
+}
+
+.signinTable{
+    width: 70%;
+    margin: 0 auto;
+    padding: 2%;
+    border-spacing: 0 20px;
+    overflow: hidden;
+    text-align: center;
 }
 
 .labelSection{
@@ -172,7 +185,7 @@ button{
     transform: scale(1.5);
 }
 
-.signupButton{
+.signupButton, .signinButton{
     width: 100%;
     font-size: 25px;
     margin: 20px 0;
@@ -182,6 +195,7 @@ button{
 
 .welcomeMessage{
     text-align: center;
+    margin: 10px 0;
 }
 
 .goSignup{
@@ -192,4 +206,9 @@ button{
 .goSignup>*{
     display: inline-block;
     margin: 0 5px;
+}
+
+.emoji{
+    display: block;
+    margin: 0 auto;
 }
