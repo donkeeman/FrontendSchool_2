@@ -7,6 +7,15 @@ body, table, h1, input[type="text"], input[type="password"], p, label{
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
 fieldset{
     margin: 0;
     padding: 0;
@@ -38,21 +47,25 @@ input, button, select{
     font: inherit;
 }
 
-.signupForm{
+a{
+    color: #20502e;
+    text-decoration: underline;
+}
+
+.mainSection{
     background-color: #FDFDFD;
-    padding: 5% 10%;
+    padding: 30px 10%;
     border-radius: 10px;
     width: 50%;
     margin: 1.5% auto;
 }
 
-.informationField{
-    
+.informationField, .successSignup{
     border-top: 2px solid lightgray;
     border-bottom: 2px solid lightgray;
 }
 
-.signupHeader{
+.header{
     text-align: center;
     font-size: 30px;
     margin-bottom: 30px;
@@ -68,7 +81,7 @@ input, button, select{
 
 .labelSection{
     text-align: right;
-    width: 30%;
+    width: 35%;
     padding-right: 10px;
     word-break: keep-all;
 }
@@ -165,4 +178,18 @@ button{
     margin: 20px 0;
     padding: 1em 0;
     border-radius: 5px;
+}
+
+.welcomeMessage{
+    text-align: center;
+}
+
+.goSignup{
+    background-color: goldenrod;
+    text-align: center;
+}
+
+.goSignup>*{
+    display: inline-block;
+    margin: 0 5px;
 }

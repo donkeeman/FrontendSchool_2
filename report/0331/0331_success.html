@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./0331.css" type="text/css" rel="stylesheet">
     <title>Success</title>
 </head>
 <body>
-    <header>
-        <h2>회원가입이 완료되었습니다.</h2>
-        <button onclick="location.href='./0331_main.html'">메인 페이지로</button>
-        <button onclick="location.href='./0331_signin.html'">로그인</button>
-    </header>
+    <main class="mainSection success">
+        <header>
+            <h1 class="header">환영합니다!</h1>
+        </header>
+        <section class="">
+            <p class="welcomeMessage">회원가입이 완료되었습니다.</p>
+            <div class="goMain">
+                <p>메인 페이지로 이동하시겠습니까?</p>
+                <button onclick="location.href='./0331_main.html'">메인 페이지로</button>
+            </div>
+            <div class="goSignin">
+                <p>바로 로그인하시겠습니까?</p>
+                <button onclick="location.href='./0331_signin.html'">로그인</button>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
