@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
-/* reset css */
+/* ----reset css---- */
 
 body, table, h1, input[type="text"], input[type="password"], p, label{
     margin: 0;
@@ -10,10 +10,6 @@ body, table, h1, input[type="text"], input[type="password"], p, label{
 a{
     text-decoration: none;
     color: inherit;
-}
-
-a:hover{
-    text-decoration: none;
 }
 
 fieldset{
@@ -34,7 +30,7 @@ button{
     vertical-align: inherit;
 }
 
-/* design */
+/* ----design---- */
 
 body{
     background-color: #20502e;
@@ -86,10 +82,20 @@ a{
 .signinTable{
     width: 70%;
     margin: 0 auto;
-    padding: 2%;
-    border-spacing: 0 20px;
+    padding: 5% 0;
+    border-spacing: 20px;
     overflow: hidden;
     text-align: center;
+}
+
+.userInputSection{
+    width: 75%;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.userIdInput, .userPwInput{
+    width: 90%;
 }
 
 .labelSection{
@@ -185,10 +191,19 @@ button{
     transform: scale(1.5);
 }
 
-.signupButton, .signinButton{
+.signupButton, .signoutButton{
     width: 100%;
     font-size: 25px;
     margin: 20px 0;
+    padding: 1em 0;
+    border-radius: 5px;
+}
+
+.signinButton{
+    width: 100%;
+    height: auto;
+    font-size: 25px;
+    margin: 0;
     padding: 1em 0;
     border-radius: 5px;
 }
@@ -199,13 +214,13 @@ button{
 }
 
 .goSignup{
-    background-color: goldenrod;
     text-align: center;
+    margin-top: 25px;
 }
 
 .goSignup>*{
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 1%;
 }
 
 .emoji{

@@ -15,16 +15,16 @@
                 <table class="signinTable">
                     <tbody>
                         <tr>
-                            <td>
-                                <input type="text" name="id" id="userIdInput" placeholder="아이디 또는 이메일 주소">
+                            <td class="userInputSection">
+                                <input type="text" name="id" class="userIdInput" id="userIdInput" placeholder="아이디 또는 이메일 주소">
                             </td>
-                            <td rowspan="2">
+                            <td class="buttonSection" rowspan="2">
                                 <button type="button" onclick="location.href='./0331_signinSuccess.html'" class="signinButton">로그인</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>
-                                <input type="password" name="pw" id="userPwInput" placeholder="비밀번호">
+                            <td class="userInputSection">
+                                <input type="password" name="pw" class="userPwInput" id="userPwInput" placeholder="비밀번호">
                             </td>
                         </tr>
                     </tbody>
@@ -32,7 +32,7 @@
             </fieldset>
         </form>
         <section class="goSignup">
-            <p>아직 계정이 없으신가요? </p><a href="./0331_signup.html">회원 가입</a>
+            <p>계정이 없으신가요?</p> <a href="./0331_signup.html">회원 가입</a>
         </section>
     </main>
 </body>
