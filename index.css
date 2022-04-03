@@ -11,6 +11,8 @@ a, a:hover, a:visited{
 /* ----design---- */
 body{
     text-align: center;
+    background-color: #1f1f1f;
+    color: #d0d0d0;
 }
 
 .header{
@@ -41,8 +43,8 @@ h3{
     width: fit-content;
     height: fit-content;
     border-radius: 4px;
-    border-left: 5px solid #3f3f3f;
-    border-right: 5px solid #3f3f3f;
+    border-left: 5px solid #d0d0d0;
+    border-right: 5px solid #d0d0d0;
 }
 
 .reportList{
@@ -59,17 +61,17 @@ h3{
 
 .reportList li a, .reportList li a:visited{
     padding: 5px;
-    
     font-weight: medium;
-    color: green;
+    color: #40B040;
 }
 
 .reportList li a:hover{
     text-decoration: underline;
+    text-shadow: 0 0 10px #80F080;
+    color: #c0c0c0;
 }
 
 .footer{
-    background-color: lightgray;
     width: 100%;
     display: block;
     position: absolute;
