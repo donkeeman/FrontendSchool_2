@@ -225,14 +225,17 @@ button{
     margin: 30px 0;
 }
 
-.goSignup{
-    text-align: center;
+.signinProblem{
     margin-top: 25px;
 }
 
-.goSignup>*{
+.goSignup, .findAccount{
+    text-align: center;
+}
+
+.goSignup *, .findAccount *{
     display: inline-block;
-    margin: 0 0.5%;
+    margin: 5px 0.5%;
 }
 
 .emoji{
