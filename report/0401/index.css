@@ -1,0 +1,37 @@
+body, header, main, section, h1, h3, ul, ul>li{
+    margin: 0;
+    padding: 0;
+}
+
+a, a:hover, a:visited{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ----design---- */
+html, body{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #1f1f1f;
+    color: #d0d0d0;
+    overflow: hidden;
+}
+
+.navList{
+    margin: 10px 0;
+}
+
+.navList li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navList li:hover{
+    cursor: pointer;
+}
+
+.showFrame{
+    width: 90%;
+    height: 90vh;
+}
