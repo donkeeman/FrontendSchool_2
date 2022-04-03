@@ -10,21 +10,21 @@
 <body>
     <main class="mainSection signin">
         <h1 class="header">로그인</h1>
-        <form action="./0331_signin.html" class="signinForm">
+        <form action="./0331_signinSuccess.html" class="signinForm">
             <fieldset class="signinField">
                 <table class="signinTable">
                     <tbody>
                         <tr>
                             <td class="userInputSection">
-                                <input type="text" name="id" class="userIdInput" id="userIdInput" placeholder="아이디 또는 이메일 주소">
+                                <input type="text" name="id" class="userIdInput" id="userIdInput" placeholder="아이디 또는 이메일 주소" required>
                             </td>
                             <td class="buttonSection" rowspan="2">
-                                <button type="button" onclick="location.href='./0331_signinSuccess.html'" class="signinButton">로그인</button>
+                                <button class="signinButton">로그인</button>
                             </td>
                         </tr>
                         <tr>
                             <td class="userInputSection">
-                                <input type="password" name="pw" class="userPwInput" id="userPwInput" placeholder="비밀번호">
+                                <input type="password" name="pw" class="userPwInput" id="userPwInput" placeholder="비밀번호" required>
                             </td>
                         </tr>
                     </tbody>
@@ -33,10 +33,12 @@
         </form>
         <div class="signinProblem">
             <section class="goSignup">
-                <p>계정이 없으신가요?</p><a href="./0331_signup.html">회원 가입</a>
+                <p>계정이 없으신가요?</p>
+                <a href="./0331_signup.html">회원 가입</a>
             </section>
             <section class="findAccount">
-                <p>아이디/비밀번호가 기억나지 않나요?</p><a href="">ID/PW 찾기</a>
+                <p>아이디/비밀번호가 기억나지 않나요?</p>
+                <a href="" onclick="alert('아직 완성되지 않았어요!')">ID/PW 찾기</a>
             </section>
         </div>
     </main>

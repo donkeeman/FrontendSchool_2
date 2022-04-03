@@ -12,22 +12,25 @@
         <header>
             <h1 class="header">회원 가입</h1>
         </header>
-        <form action="./0331_signup.html" class="signupForm">
+        <form action="./0331_signupSuccess.html" class="signupForm">
             <fieldset class="informationField">
                 <table class="signupTable">
                     <tbody>
                         <tr>
+                            <td colspan="2" class="warning">* 표시는 필수 입력 항목입니다.</td>
+                        </tr>
+                        <tr>
                             <td class="labelSection">
-                                아이디
+                                <span class="star">*</span>아이디
                             </td>
                             <td class="inputSection">
                                 <input type="text" class="idInput" name="id" id="userId" required>
-                                <button type="button" class="doubleCheckButton">중복 확인</button>
+                                <button onclick="alert('사용 가능한 아이디입니다.')" class="doubleCheckButton">중복 확인</button>
                             </td>
                         </tr>
                         <tr>
                             <td class="labelSection">
-                                비밀번호
+                                <span class="star">*</span>비밀번호
                             </td>
                             <td class="inputSection">
                                 <input type="password" class="pwInput" name="pw" id="userPw" required>
@@ -35,7 +38,7 @@
                         </tr>
                         <tr>
                             <td class="labelSection">
-                                비밀번호 확인
+                                <span class="star">*</span>비밀번호 확인
                             </td>
                             <td class="inputSection">
                                 <input type="password" class="pwInput" name="pwConfirm" id="userPwConfirm" required>
@@ -46,7 +49,7 @@
                                 이름
                             </td>
                             <td class="inputSection">
-                                <input type="text" class="nameInput" name="name" id="userName" required>
+                                <input type="text" class="nameInput" name="name" id="userName">
                             </td>
                         </tr>
                         <tr>
@@ -54,19 +57,19 @@
                                 성별
                             </td>
                             <td class="inputSection">
-                                <label class="genderLabel" for="gender"> 남 </label><input type="radio" class="genderRadio" name="gender" id="male" required>
-                                <label class="genderLabel" for="gender"> 여 </label><input type="radio" class="genderRadio" name="gender" id="female" required>
+                                <label class="genderLabel" for="gender"> 남 </label><input type="radio" class="genderRadio" name="gender" id="male">
+                                <label class="genderLabel" for="gender"> 여 </label><input type="radio" class="genderRadio" name="gender" id="female">
                             </td>
                         </tr>
                         <tr>
                             <td class="labelSection">
-                                이메일
+                                <span class="star">*</span>이메일
                             </td>
                             <td class="inputSection">
-                                <input type="text" class="emailId" name="emailId" id="userEmailId">
+                                <input type="text" class="emailId" name="emailId" id="userEmailId" required>
                                 @
-                                <select class="domain" name="domain" id="domainMenu">
-                                    <option value="" selected>선택하세요</option>
+                                <select class="domain" name="domain" id="domainMenu" required>
+                                    <option value="" disabled>선택하세요</option>
                                     <option value="gmail">gmail.com</option>
                                     <option value="naver">naver.com</option>
                                     <option value="daum">daum.net</option>
@@ -103,7 +106,12 @@
             <fieldset class="termField">
                 <h3 class="termsHeader">이용 약관</h3>
                 <div class="terms">
-                    <p>
+                    <h4 class="termTitle">1. lorem</h4>
+                    <p class="termText">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur illo est ex nobis ipsum quidem dolores beatae sint praesentium, inventore nostrum vero quam, quo incidunt maxime hic itaque? Nobis, beatae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, ipsum. Eos animi accusamus corporis numquam, autem dolore placeat? Molestias, dicta voluptatem tempore maiores beatae velit similique dolor exercitationem id saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti voluptates voluptatem facilis libero ex sequi ducimus. Suscipit officiis, nam deserunt praesentium eos, vel libero laborum unde amet cumque neque quasi?
+                    </p>
+                    <h4 class="termTitle">2. ipsum</h4>
+                    <p class="termText">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur illo est ex nobis ipsum quidem dolores beatae sint praesentium, inventore nostrum vero quam, quo incidunt maxime hic itaque? Nobis, beatae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, ipsum. Eos animi accusamus corporis numquam, autem dolore placeat? Molestias, dicta voluptatem tempore maiores beatae velit similique dolor exercitationem id saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti voluptates voluptatem facilis libero ex sequi ducimus. Suscipit officiis, nam deserunt praesentium eos, vel libero laborum unde amet cumque neque quasi?
                     </p>
                 </div>
@@ -111,9 +119,9 @@
                     <label for="agree">
                         위 약관에 동의하시겠습니까?
                     </label>
-                    <input type="checkbox" class="agreeCheck" name="agree" id="agreeCheck">
+                    <input type="checkbox" class="agreeCheck" name="agree" id="agreeCheck" required>
                 </div>
-                <button type="button" onclick="location.href='./0331_signupSuccess.html'" class="signupButton">가입하기</button>
+                <button class="signupButton">가입하기</button>
             </fieldset>
         </form>
     </main>

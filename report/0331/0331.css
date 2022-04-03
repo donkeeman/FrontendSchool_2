@@ -2,7 +2,7 @@
 
 /* ----reset css---- */
 
-body, table, h1, input[type="text"], input[type="password"], p, label{
+body, table, h1, h4, input[type="text"], input[type="password"], p, label{
     margin: 0;
     padding: 0;
 }
@@ -72,6 +72,13 @@ a{
     margin-bottom: 30px;
 }
 
+.warning{
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+    color: gray;
+}
+
 .signupTable{
     width: 70%;
     margin: 0 auto;
@@ -104,6 +111,11 @@ a{
     width: 35%;
     padding-right: 10px;
     word-break: keep-all;
+}
+
+.star{
+    color:#20502e;
+    margin: 0 2px;
 }
 
 .inputSection{
@@ -186,6 +198,14 @@ button{
     height: 100px;
     overflow: auto;
     background-color: white;
+}
+
+.termTitle{
+    margin: 10px 0;
+}
+
+.termText{
+    font-size: 14px;
 }
 
 .agreement{
