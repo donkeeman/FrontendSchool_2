@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+/* reset css */
+
+body, div, section, ul, legend{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+fieldset{
+    border: none;
+}
+
+button{
+    border: none;
+    background-color: inherit;
+}
+
+input[type="text"], input[type="text"]:focus{
+    outline: 0;
+}
+
+input[type="number"], input[type="number"]:focus{
+    outline: 0;
+}
+
+input[type="date"], input[type="date"]:focus{
+    outline: 0;
+}
+
+select, select:focus{
+    border: none;
+    border-radius: 0;
+    outline: 0;
+}
+
+/* design */
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 20px 40px;
+    background-color: lightgray;
+    font-size: 18px;
+}
+
+input, button, select{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    transform: scale(1.5);
+    margin: 0 5px;
+    accent-color: rebeccapurple;
+}
+
+button{
+    cursor: pointer;
+}
+
+.header, .inputField, .inputSection{
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 0 2px gray;
+}
+
+.header{
+    padding-top: 0;
+    border-top: 14px solid rebeccapurple;
+}
+
+.inputField, .inputSection{
+    margin: 20px 0;
+    padding: 30px;
+}
+
+.inputField legend{
+    display: block;
+    width: 100%;
+    height: 50px;
+    float: left;
+}
+
+.inputList{
+    padding-left: 10px;
+}
+
+.inputList li{
+    margin: 14px;
+    vertical-align: middle;
+}
+
+.inputLabel, .miniInputLabel{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.miniInputLabel{
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.textInput{
+    display: inline-block;
+    margin-top: 20px;
+    border-width: 0 0 1px;
+    border-color: lightgray;
+    padding: 2px;
+    font-size: inherit;
+}
+
+.textInput.short{
+    width: 50%;
+}
+
+.textInput.long{
+    width: 100%;
+}
+
+.textInput :placeholder-shown{
+    padding-left: 2px;
+}
+
+.textInput:focus{
+    border-color: rebeccapurple;
+    border-width: 0 0 2px;
+}
+
+.selectWrapper{
+    width: 40%;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 15px 20px;
+}
+
+.questionSelect{
+    width: 100%;
+    height: auto;
+    font-size: inherit;
+    color: gray;
+}
+
+.noonSelect{
+    padding: 0 2px;
+    font-size: inherit;
+}
+
+.dateInput{
+    margin-top: 10px;
+    border-color:  lightgray;
+    border-width: 0 0 2px;
+    font-size: inherit;
+}
+
+.numInput{
+    width: 40px;
+    border-width: 0 0 1px;
+    border-color: lightgray;
+}
+
+.submitButton{
+    background-color: rebeccapurple;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    padding: 10px 25px;
+}
+
+.resetButton{
+    float: right;
+    vertical-align: middle;
+    font-weight: bold;
+    color: rebeccapurple;
+    font-size: 14px;
+    padding: 10px 5px;
+}

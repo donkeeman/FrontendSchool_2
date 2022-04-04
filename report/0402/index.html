@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./index.css" type="text/css" rel="stylesheet">
+    <title>0402 Report</title>
+</head>
+<body>
+    <header class="header">
+        <h1>나와 잘 맞는 회사는?</h1>
+        <p>가고 싶은 회사에 대한 호감도를 조사합니다. 아이고 의미 없다.</p>
+    </header>
+
+    <main>
+       <form action="">
+            <fieldset class="inputField">
+                <legend>
+                    다음 문자 중에 왠지 마음에 드는 것을 하나 고르세요.
+                </legend>
+                <ul class="inputList">
+                    <li>
+                        <input type="radio" name="company" id="n">
+                        <label for="n">네</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="company" id="k">
+                        <label for="k">카</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="company" id="l">
+                        <label for="l">라</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="company" id="c">
+                        <label for="c">쿠</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="company" id="b">
+                        <label for="n">베</label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset class="inputField">
+                <legend>
+                    친구와 문자를 합니다. 다음 중 어떤 메신저를 이용하시겠습니까? 모두 골라주세요.
+                </legend>
+                <ul class="inputList">
+                    <li>
+                        <input type="checkbox" name="messenger" id="kakao">
+                        <label for="messenger">카카오톡</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="messenger" id="line">
+                        <label for="messenger">라인</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="messenger" id="insta">
+                        <label for="messenger">인스타그램 DM</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="messenger" id="nate">
+                        <label for="messenger">네이트온</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="messenger" id="buddy">
+                        <label for="messenger">버디버디</label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <section class="inputSection">
+                <label for="introduce" class="inputLabel">
+                    면접에서 자신의 포부를 한 문장으로 얘기한다면?
+                </label>
+                <input type="text" name="introduce" class="textInput short" placeholder="내 답변">
+            </section>
+            <section class="inputSection">
+                <label for="cheer" class="inputLabel">
+                    당신은 지금 한 기업의 최종 면접을 앞두고 있습니다. 면접장에 들어가기 직전, 자기 자신에게 해 주고 싶은 말은?
+                </label>
+                <input type="text" name="cheer" class="textInput long" placeholder="내 답변">
+            </section>
+
+            <section class="inputSection">
+                <label for="question" class="inputLabel">
+                    다음 중 기술 면접 때 듣고 싶은 질문이 아닌 것은?
+                </label>
+                <div class="selectWrapper">
+                    <select name="question" class="questionSelect" id="question">
+                        <option value="">선택</option>
+                        <option value="os">운영 체제</option>
+                        <option value="db">데이터베이스</option>
+                        <option value="network">네트워크</option>
+                        <option value="algorithm">알고리즘</option>
+                        <option value="structure">자료 구조</option>
+                        <option value="programming">프로그래밍</option>
+                    </select>
+                </div>
+            </section>
+
+            <fieldset class="inputField">
+                <legend>
+                    취업을 희망하는 날짜를 선택해 주세요.
+                </legend>
+                <label for="chooseDate" class="miniInputLabel">
+                    날짜
+                </label>
+                <input type="date" name="chooseDate" class="dateInput">
+            </fieldset>
+
+            <fieldset class="inputField">
+                <legend>
+                    업무를 시작하기에 가장 적당한 시간을 고르세요.
+                </legend>
+                <label for="chooseTime" class="miniInputLabel">
+                    시간
+                </label>
+                <input type="number" min="1" max="12" name="chooseTime" class="numInput">
+                :
+                <input type="number" min="0" max="59" name="chooseTime" class="numInput">
+                <select name="noon" class="noonSelect" id="noon">
+                    <option value="am">AM</option>
+                    <option value="pm">PM</option>
+                </select>
+            </fieldset>
+
+            <button type="submit" onclick="alert('제출되었습니다. 감사합니다.')" class="submitButton">제출</button>
+            <button type="reset" class="resetButton">양식 지우기</button>
+        </form>
+    </main>
+</body>
+</html>
