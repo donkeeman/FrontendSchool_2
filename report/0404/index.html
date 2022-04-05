@@ -52,45 +52,55 @@
                 <ul class="inputList">
                     <li>
                         <input type="checkbox" name="messenger" id="kakao">
-                        <label for="messenger">카카오톡</label>
+                        <label for="kakao">
+                            카카오톡
+                        </label>
                     </li>
                     <li>
                         <input type="checkbox" name="messenger" id="line">
-                        <label for="messenger">라인</label>
+                        <label for="line">
+                            라인
+                        </label>
                     </li>
                     <li>
                         <input type="checkbox" name="messenger" id="insta">
-                        <label for="messenger">인스타그램 DM</label>
+                        <label for="insta">
+                            인스타그램 DM
+                        </label>
                     </li>
                     <li>
                         <input type="checkbox" name="messenger" id="nate">
-                        <label for="messenger">네이트온</label>
+                        <label for="nate">
+                            네이트온
+                        </label>
                     </li>
                     <li>
                         <input type="checkbox" name="messenger" id="buddy">
-                        <label for="messenger">버디버디</label>
+                        <label for="buddy">
+                            버디버디
+                        </label>
                     </li>
                 </ul>
             </fieldset>
             <!-- 면접 포부 (input[type="text"]) -->
             <section class="inputSection">
-                <label for="introduce" class="inputLabel">
+                <h2 class="inputLabel">
                     면접에서 자신의 포부를 한 문장으로 얘기한다면?
-                </label>
+                </h2>
                 <input type="text" name="introduce" class="textInput short" placeholder="내 답변">
             </section>
             <!-- 하고 싶은 말 (input[type="text"]) -->
             <section class="inputSection">
-                <label for="cheer" class="inputLabel">
+                <h2 class="inputLabel">
                     당신은 지금 한 기업의 최종 면접을 앞두고 있습니다. 면접장에 들어가기 직전, 자기 자신에게 해 주고 싶은 말은?
-                </label>
+                </h2>
                 <input type="text" name="cheer" class="textInput long" placeholder="내 답변">
             </section>
             <!-- 면접 질문 (select) -->
             <section class="inputSection">
-                <label for="question" class="inputLabel">
+                <h2 class="inputLabel">
                     다음 중 기술 면접 때 듣고 싶은 질문이 아닌 것은?
-                </label>
+                </h2>
                 <div class="selectWrapper">
                     <select name="question" class="questionSelect" id="question">
                         <option value="">선택</option>
@@ -108,19 +118,19 @@
                 <legend>
                     취업을 희망하는 날짜를 선택해 주세요.
                 </legend>
-                <label for="date" class="miniInputLabel">
+                <h3 class="miniInputLabel">
                     날짜
-                </label>
-                <input type="date" name="date" class="dateInput">
+                </h3>
+                <input type="date" name="date" id="date" class="dateInput">
             </fieldset>
             <!-- 시간 선택 (input[type="number"]) -->
             <fieldset class="inputField">
                 <legend>
                     업무를 시작하기에 가장 적당한 시간을 고르세요.
                 </legend>
-                <label class="miniInputLabel">
+                <h3 class="miniInputLabel">
                     시간
-                </label>
+                </h3>
                 <input type="number" min="1" max="12" name="hour" class="numInput">
                 :
                 <input type="number" min="0" max="59" name="min" class="numInput">
