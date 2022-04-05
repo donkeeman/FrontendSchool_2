@@ -15,8 +15,8 @@
     </header>
     <!-- main form -->
     <main>
-       <form action="./index.html">
-           <!-- 회사 선택 (input[type="radio"]) -->
+        <form action="./index.html">
+            <!-- 회사 선택 (input[type="radio"]) -->
             <fieldset class="inputField">
                 <legend>
                     다음 문자 중에 왠지 마음에 드는 것을 하나 고르세요.
@@ -103,7 +103,7 @@
                 </h2>
                 <div class="selectWrapper">
                     <select name="question" class="questionSelect" id="question">
-                        <option value="">선택</option>
+                        <option value="" disabled>선택</option>
                         <option value="os">운영 체제</option>
                         <option value="db">데이터베이스</option>
                         <option value="network">네트워크</option>
@@ -118,9 +118,9 @@
                 <legend>
                     취업을 희망하는 날짜를 선택해 주세요.
                 </legend>
-                <h3 class="miniInputLabel">
+                <span class="miniInputLabel">
                     날짜
-                </h3>
+                </span>
                 <input type="date" name="date" id="date" class="dateInput">
             </fieldset>
             <!-- 시간 선택 (input[type="number"]) -->
@@ -128,9 +128,9 @@
                 <legend>
                     업무를 시작하기에 가장 적당한 시간을 고르세요.
                 </legend>
-                <h3 class="miniInputLabel">
+                <span class="miniInputLabel">
                     시간
-                </h3>
+                </span>
                 <input type="number" min="1" max="12" name="hour" class="numInput">
                 :
                 <input type="number" min="0" max="59" name="min" class="numInput">

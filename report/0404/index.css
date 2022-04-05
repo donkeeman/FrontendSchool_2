@@ -2,12 +2,12 @@
 
 /* reset css */
 
-body, h2, h3, div, section, ul, legend{
+body, h2, span, div, section, ul, legend{
     margin: 0;
     padding: 0;
 }
 
-h2, h3{
+h2, span{
     font: inherit;
 }
 
