@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap');
+
 body, table, table tr, table tr td{
     margin: 0;
     padding: 0;
@@ -7,20 +9,40 @@ body, table, table tr, table tr td{
 .calendar{
     margin: 0 auto;
     text-align: center;
-    background-color: yellowgreen;
+    font-size: 18px;
+    border-spacing: 20px;
 }
 
-.calendar tr th+td{
-    width: 40px;
+body{
+    font-family: 'Merriweather', serif;
+    background-color: black;
+}
+
+.calendar caption h1{
+    color: #FF9C1B;
 }
 
 .monthCalendar{
-    background-color: orange;
+    background-color: #FF9C1B;
+    outline: 2px solid white;
+    padding: 10px;
 }
 
 .monthName{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
+    font-style: italic;
+    padding: 5px 0;
+    color: #FF9C1B;
+}
+
+.weekHeader{
+    height: 40px;
+}
+
+.monthCalendar tr td{
+    width: 40px;
+    height: 40px;
 }
 
 /* 토요일(6번째 열)은 파란색 */
@@ -29,7 +51,14 @@ body, table, table tr, table tr td{
 }
 
 /* 일요일(0번째 열), 공휴일은 빨간색 */
-/* 토요일인데 공휴일인 경우 빨간색으로 덧씌워지도록 뒤에 배치 */
+/* 토요일인데 공휴일인 경우 빨간색으로 덧씌워지도록 뒤에 배치(클래스 중첩으로 우선도 높임) */
 .monthCalendar th:nth-child(1), .monthCalendar td:nth-child(1), .monthCalendar .holiday.holiday{
     color: red;
+}
+
+.birth{
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: green;
+    color: white;
 }
