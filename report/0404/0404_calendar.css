@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
+/* reset css */
+
 body, blockquote, cite, table, table tr, table tr td{
     margin: 0;
     padding: 0;
     font-size: inherit;
+}
+
+/* design */
+
+body{
+    font-family: 'Merriweather', serif;
+    background-color: black;
 }
 
 .calendar{
@@ -12,11 +21,6 @@ body, blockquote, cite, table, table tr, table tr td{
     text-align: center;
     font-size: 18px;
     border-spacing: 20px;
-}
-
-body{
-    font-family: 'Merriweather', serif;
-    background-color: black;
 }
 
 .calendar caption{
