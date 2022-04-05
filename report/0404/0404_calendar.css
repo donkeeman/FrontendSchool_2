@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
-body, table, table tr, table tr td{
+body, blockquote, cite, table, table tr, table tr td{
     margin: 0;
     padding: 0;
     font-size: inherit;
@@ -18,8 +19,14 @@ body{
     background-color: black;
 }
 
-.calendar caption h1{
+.calendar caption{
     color: #FF9C1B;
+}
+
+.wise{
+    font-style: italic;
+    font-size: 14px;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 .monthCalendar{
