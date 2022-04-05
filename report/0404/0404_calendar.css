@@ -10,8 +10,6 @@ body, table, table tr, table tr td{
     background-color: yellowgreen;
 }
 
-
-
 .calendar tr th+td{
     width: 40px;
 }
@@ -20,10 +18,18 @@ body, table, table tr, table tr td{
     background-color: orange;
 }
 
+.monthName{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* 토요일(6번째 열)은 파란색 */
 .monthCalendar th:nth-child(7), .monthCalendar td:nth-child(7){
     color: blue;
 }
 
+/* 일요일(0번째 열), 공휴일은 빨간색 */
+/* 토요일인데 공휴일인 경우 빨간색으로 덧씌워지도록 뒤에 배치 */
 .monthCalendar th:nth-child(1), .monthCalendar td:nth-child(1), .monthCalendar .holiday.holiday{
     color: red;
 }
