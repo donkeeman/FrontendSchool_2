@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>font</title>
+    <style>
+        body {
+            font-size: 10px;
+        }
+        p    {
+            font-size: 2em;
+        }
+        div  {
+            font-size: 2em;
+        }
+        .one{
+            font-size: 2rem;
+        }
+        .two{
+            /* vh: view(보여지는 영역)의 height 백분율 단위 */
+            width: 500px;
+            height: 50vh;
+            background-color: red;
+        }
+        .three{
+            width: 500px;
+            height: 400px;
+            background-color: blue;
+        }
+        .four{
+            /* vw: view(보여지는 영역)의 width 백분율 단위 */
+            width: 50vw;
+            height: 200px;
+            background-color: red;
+        }
+        .five{
+            width: 500px;
+            height: 400px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- (부모의 크기값 * 자식의 em 값) = 자식이 가지게 될 크기 값 -->
+    <h1>hello</h1>
+    <p>hello world</p>
+    <!-- em으로만 하면 부모의 크기에 계속 배수를 하기 때문에 점점 커진다. -->
+    <div>
+        <div>
+            <div>hello</div>
+        </div>
+    </div>
+    <!-- rem은 가장 바깥의 크기의 배수이다. -->
+    <div>
+        <div>
+            <div class="one">hello</div>
+        </div>
+    </div>
+    <div class="three">
+        <div class="two"></div>
+    </div>
+    <br>
+    <div class="five">
+        <div class="four"></div>
+    </div>
+</body>
+</html>
