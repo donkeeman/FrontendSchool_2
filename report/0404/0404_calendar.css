@@ -35,7 +35,7 @@ body{
 
 .monthCalendar{
     background-color: #FF9C1B;
-    outline: 2px solid white;
+    outline: 2px solid #DDDDDD;
     padding: 10px;
 }
 

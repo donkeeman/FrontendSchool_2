@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 마진 값이 높은 쪽의 마진만 적용됩니다. */
+        /* div{
+            width:100px;
+            height:100px;
+            border:1px solid black;
+        } */
+
+        .first{
+            margin-bottom:30px;
+        }
+
+        .second{
+            margin-top:60px;
+        }
+
+        /* 부모의 높이를 따로 지정하지 않으면 자식의 높이만큼 부모의 높이가 지정됩니다.
+        하지만 밑과 같은 경우 자식의 마진 탑, 바텀 값이 부모의 높이에 영향을 미치지 않게 됩니다. */
+        .parent{
+            margin-top: 30px;
+            background-color:yellow;
+            /* 해결법 */
+            /* 1. overflow: hidden을 주면 원하는 대로 child의 margin이 적용된다. */
+            /* overflow: hidden; */
+            /* 2. display: inline-block */
+            display: inline-block;
+            /* 3. 부모에 border 적용하기 */
+            /* border: 1px solid black; */
+        }
+        .child{
+            margin: 30px;
+            width: 100px;
+            height: 100px;
+            margin-top: 100px;
+            background-color: red;
+        }
+
+    </style>
+    <title>margin collapse</title>
+</head>
+<body>
+    <!-- <div class="first"></div>
+    <div class="second"></div> -->
+
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>
