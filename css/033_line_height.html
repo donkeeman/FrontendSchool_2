@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body, h1{
+            margin: 0;
+            padding: 0;
+        }
+        /* line-height: 말 그대로 한 줄의 높이를 결정 */
+        /* 폰트 사이의 영역은 margin, padding과 관계 없이 읽기 편하라고 기본으로 주어지는 leading 영역 */
+        /* 그러므로 line-height: normal이면 폰트의 사이즈와 실제 영역의 높이가 다르게 됨 */
+        /* 폰트 사이즈보다 line-height가 작게 잡히면 글자가 영역을 벗어남 */
+        .container{
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+            font-size: 16px;
+            /* px와 em으로 주게 되면 고정값이므로 글자가 영역을 벗어날 수 있음 */
+            /* line-height: 10px; */
+            /* line-height: 1em; */
+            /* 숫자(배수)로 주게 되면 폰트 사이즈에 따라서 높이를 계산하기 때문에 글자가 영역을 벗어나지 않음 */
+            line-height: 1;
+        }
+        .one{
+            border: 1px solid black;
+            font-size: 10px;
+        }
+        .two{
+            border: 1px solid black;
+            font-size: 20px;
+        }
+        .three{
+            border: 1px solid black;
+            font-size: 30px;
+        }
+    </style>
+    <title>line height</title>
+</head>
+<body>
+    <h1>hello world</h1>
+    <div class="container">
+        <div class="one">hello world</div>
+        <div class="two">hello world</div>
+        <div class="three">hello world</div>
+    </div>
+</body>
+</html>
