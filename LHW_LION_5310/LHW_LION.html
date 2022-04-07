@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="LHW_LION.css" type="text/css" rel="stylesheet">
+    <script src="./LHW_LION.js" defer></script>
+    <title>이혜원_2차구현과제_5310</title>
+</head>
+<body>
+    <div class="header">
+        <p>로그인 또는 회원가입</p>
+        <button id="closeButton"><img src="./LHW_LION_img/close.png" alt="close"></button>
+    </div>
+    <hr>
+    <div class="login">
+        <p>위니브에서 여러분의 궁금증을 해결하세요! :)</p>
+        <button id="alwaysLogin" value="false">
+            <img id="checkImg" src="./LHW_LION_img/icon_check_empty.png" alt="check">
+            <span>로그인 상태 유지</span>
+        </button>
+        <button id="loginButton">로그인</button>
+        <div>
+            <button id="createAccount">회원가입</button>
+            <span>|</span>
+            <button id="findAccount">아이디/비밀번호 찾기</button>
+        </div>
+        <fieldset id="socialLogin">
+            <legend><span>또는</span></legend>
+            <ul>
+                <li>
+                    <a href="https://www.google.com">
+                        <button class="socialLoginButtons" id="google">
+                            <img src="./LHW_LION_img/icon_google.png">
+                            구글 계정으로 로그인
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com">
+                        <button class="socialLoginButtons" id="facebook">
+                            <img src="./LHW_LION_img/icon_facebook.png">
+                            페이스북 계정으로 로그인
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.naver.com">
+                        <button class="socialLoginButtons" id="naver">
+                            <img src="./LHW_LION_img/icon_naver.png">
+                            네이버 계정으로 로그인
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.kakaocorp.com">
+                        <button class="socialLoginButtons" id="kakao">
+                            <img src="./LHW_LION_img/icon_kakao.png">
+                            카카오톡 계정으로 로그인
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </fieldset>
+    </div>    
+</body>
+</html>

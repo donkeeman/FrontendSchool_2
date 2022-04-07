@@ -1,0 +1,161 @@
+/* reset css */
+
+body, h1, h2, div, ul, ul li{
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    color: inherit;
+    font-size: inherit;
+}
+
+
+
+/* design */
+
+body{
+    padding: 20px 10px;
+    text-align: center;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: dimgray;
+    margin: 0.5em 0;
+    font-size: 0.9em;
+    vertical-align: middle;
+}
+
+span{
+    margin: 0 0.8em;
+    color: dimgray;
+    font-size: 0.9em;
+}
+
+button img {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.header{
+    max-width: 100%;
+}
+
+.header p{
+    display: inline-block;
+    margin: 0;
+}
+
+#closeButton{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.login{
+    max-width: 100%;
+    padding: 0 0.5em;
+}
+
+.login p{
+    max-width: 100%;
+    padding: 0 0.5em;
+    text-align: left;
+    font-size: 1.3em;
+}
+
+#alwaysLogin{
+    vertical-align: middle;
+    float: left;
+}
+
+#loginButton{
+    width: 99%;
+    padding: 0.8em 0;
+    background-color: #2F80EA;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.socialLoginList{
+    max-width: 100%;
+}
+
+.socialLoginList li{
+    width: 100%;
+    list-style-type: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin: 10px 0;
+}
+
+.socialLoginIcon{
+    display: inline-block;
+    width: 40px;
+    height: 42px;
+    background-repeat: no-repeat;
+    border: 1px solid blue;
+}
+
+.socialLoginButton{
+    display: inline-block;
+    background-color: lightsalmon;
+}
+
+.socialLoginIcon.google{
+    background: url("./LHW_LION_img/css_sprites.png") left top;
+}
+
+.socialLoginList>.google{
+    border-color: dimgray;
+}
+
+.socialLoginList>.google:hover{
+    background-color: lightgray;
+}
+
+.socialLoginIcon.facebook{
+    background: url("./LHW_LION_img/css_sprites.png") right top;
+}
+
+.socialLoginList>.facebook{
+    border-color: #2A9CDB;
+}
+
+.socialLoginList>.facebook:hover{
+    background-color:skyblue;
+}
+
+.socialLoginIcon.naver{
+    background: url("./LHW_LION_img/css_sprites.png") left bottom;
+}
+
+.socialLoginList>.naver{
+    border-color: #00BF18;
+}
+
+.socialLoginList>.naver:hover{
+    background-color: #99FF66;
+}
+
+.socialLoginIcon.kakao{
+    background: url("./LHW_LION_img/css_sprites.png") center top;
+}
+
+.socialLoginList>.kakao{
+    border-color: #F0C94C;
+}
+
+.socialLoginList>.kakao:hover{
+    background-color:#FFEE58;
+}
+
