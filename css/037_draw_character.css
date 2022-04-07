@@ -1,0 +1,202 @@
+/* animaition */
+/* 구간이 두 개이면 % 대신 from, to로 나눠도 됨 */
+@keyframes earLeftAnim{
+    0%{
+        transform: rotate(-30deg);
+    }
+
+    100%{
+        transform: rotate(-40deg) translate(-10px);
+    }
+}
+
+@keyframes earRightAnim{
+    0%{
+        transform: rotate(30deg);
+    }
+
+    100%{
+        transform: rotate(40deg) translate(10px);
+    }
+}
+
+@keyframes mouthAnim {
+    0%{
+        transform: scaleY(1);
+    }
+    100%{
+        transform: scaleY(1.2);
+    }
+}
+
+/* settings */
+
+:root {
+    --pri: #CE705F;
+    --sec: #ECD376;
+}
+
+/* reset */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* layout */
+
+/* design */
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    background: rebeccapurple;
+}
+
+.licat {
+    position: relative;
+    top: 100px;
+    margin: 50px auto;
+    width: 400px;
+    height: 380px;
+    /* background-color: white; */
+}
+
+.licat .ear{
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 92px;
+    border: 10px solid black;
+    border-radius: 50%;
+    background-color: var(--sec);
+}
+
+.licat .ear.left{
+    top: 35px;
+    left: 65px;
+    transform: rotate(-30deg);
+    border-radius: 70% 50% 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: earLeftAnim 1s infinite alternate;
+}
+
+.licat .ear.right{
+    top: 35px;
+    right: 65px;
+    transform: rotate(30deg);
+    border-radius: 50% 70% 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: earRightAnim 1s infinite alternate;
+}
+
+.licat .face{
+    position: absolute;
+    bottom: 0;
+    width: 400px;
+    height: 310px;
+    border: 10px solid black;
+    border-radius: 50%;
+    background-color: var(--sec);
+}
+
+.licat .earline.left{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 60px;
+    /* 부모에 각도가 적용되어 있으면 그 각도의 기준이 자식에도 적용됨 */
+    transform: rotate(-90deg);
+    background-color: black;
+    border: 5px solid #000;
+    border-radius: 0 60% 10% 0;
+}
+
+.licat .earline.right{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 60px;
+    /* 부모에 각도가 적용되어 있으면 그 각도의 기준이 자식에도 적용됨 */
+    transform: rotate(90deg);
+    background-color: black;
+    border: 5px solid #000;
+    border-radius: 60% 0 0 10%;
+}
+
+.licat .eye{
+    position: absolute;
+    top: 110px;
+    width: 23px;
+    height: 23px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.licat .face .eye.left{
+    left: 145px;
+}
+
+.licat .face .eye.right{
+    right: 145px;
+}
+
+
+.licat .face .mouth{
+    position: absolute;
+    width: 75px;
+    height: 50px;
+    border-radius: 50%;
+    border: 10px solid black;
+}
+
+.inmouth{
+    position: absolute;
+    bottom: 70px;
+    left: 165px;
+    width: 50px;
+    height: 70px;
+    border-radius: 0 0 50% 50%;
+    background-color: indianred;
+    border: 10px solid black;
+    animation: mouthAnim 1s infinite alternate;
+}
+
+.licat .mouth.one{
+    bottom: 85px;
+    left: 120px;
+}
+
+.licat .mouth.two{
+    bottom: 85px;
+    right: 120px;
+}
+
+.dd{
+    position: absolute;
+    left: 50px;
+    width: 300px;
+    height: 40px;
+    background-color: var(--sec);
+}
+
+.dd.one{
+    bottom: 95px;
+}
+
+.dd.two{
+    bottom: 110px;
+}
+
+.nose{
+    position: absolute;
+    top: 150px;
+    left: 165px;
+    width: 50px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+}
