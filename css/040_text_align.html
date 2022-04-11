@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        div{
+            border: 5px solid black;
+            margin: 10px;
+        }
+        span{
+            border: 5px solid blue;
+        }
+        .text_center{
+            text-align: center;
+        }
+        .text_left{
+            text-align: left;
+        }
+        .text_right{
+            text-align: right;
+        }
+        .one{
+            margin: 0 auto;
+        }
+        .block{
+            width: 100px;
+            display: block;
+        }
+        .two{
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        .three{
+            position: relative;
+            top: 50px;
+            right: 100px;
+        }
+        .four{
+            position: relative;
+            height: 500px;
+            width: 500px;
+        }
+        .five{
+            position: absolute;
+            top: 20px;
+            transform: translate(-50%);
+            left: 50%;
+        }
+
+        a{
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        1. text-align: center를 줬을 때 정렬되는 요소
+        - 자식인 인라인 요소
+        - 자식인 블록 요소
+        - 자식인 인라인 블록 요소
+        - 일반 텍스트 요소
+
+        2. margin: 0 auto를 줬을 때 정렬되는 요소
+        - 블록 요소인 자기 자신 (자식에는 적용 x)
+        - 블록 요소가 부모의 전체 width를 가지고 있을 경우 원하는 중앙 정렬을 얻을 수 없다.
+        - 인라인 블록인 경우 사용할 수 없다.
+        - 인라인 요소를 블록으로 바꾼 다음 width를 부모보다 적게 주면 사용할 수 있다.
+        3. transform: translate(-50%) & left(50%)
+        - 자기 자신 기준으로 정렬되므로 자기 자신의 margin에 영향을 받을 수 있다.
+    -->
+    <div class="text_left">
+        <span>왼쪽 정렬</span>
+    </div>
+    <div class="text_right">
+        <span>오른쪽 정렬</span>
+    </div>
+    <div class="text_center">
+        <span>가운데 정렬</span>
+    </div>
+    <div class="text_center">
+        <span>가운데 정렬</span>
+        <p>hello world</p>
+        hello
+        <h1>hello world</h1>
+        <input type="text">
+    </div>
+    <div>
+        <span class="one block">hello world margin 0 auto</span>
+    </div>
+    <div class="two">
+        <span>hello world margin 0 auto</span>
+    </div>
+    <div class="three">
+        hello
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="four">
+        hello
+        <div class="five">hello</div>
+    </div>
+
+    <!-- 
+        위에 블록 요소를 주지 않고 
+        a를 block으로 한 다음 text-align:center를 줄 경우 
+        안에 click이 인라인 요소처럼 처리되어 중앙정렬이 됩니다.
+    -->
+    <a href="#">Click!</a>
+</body>
+</html>
