@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title></title>
+    <style>
+        /* li 안의 .one인 것을 선택 */
+        li .one{
+            color: red;
+        }
+        /* li이면서 .one인 것을 선택 */
+        li.one{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>hello world</h1>
+    <ul>
+        <li><p class="one">hello world</p></li>
+        <li>
+            <div>
+                <p class="one">hello world</p>
+            </div>
+        </li>
+        <li>hello world</li>
+        <li class="one">hello world</li>
+        <li class="one">hello world</li>
+    </ul>
+</body>
+</html>
