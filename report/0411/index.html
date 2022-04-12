@@ -4,42 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .loginButton{
-            position: absolute;
-            width: 318px;
-            height: 40px;
-            left: 16px;
-            top: 50px;
-
-            background: #711BFF;
-            border-radius: 4px;
-            vertical-align: middle;
-        }
-
-        .loginButton>*{
-            vertical-align: bottom;
-        }
-
-        .loginButton p{
-            display: flex;
-            align-items: center;
-            font-family: 'Spoqa Han Sans Neo';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 15px;
-            /* identical to box height */
-
-            text-align: center;
-
-            color: #FFFFFF;
-
-        }
-    </style>
-    <title></title>
+    <link href="./index.css" type="text/css" rel="stylesheet">
+    <title>Login</title>
 </head>
 <body>
-    <button class="loginButton"><img src="./weniv-logo.png" alt=""><p>로그인</p></button>
+    <article class="loginArticle">
+        <h2 class="loginHeader">위니브 로그인</h2>
+        <p class="message">
+            더 편리해진 위니브에 오신 것을 환영합니다.
+        </p>
+        <a href="#none" class="loginLink">
+            <img src="./public/weniv-logo.png" alt="weniv">
+            로그인
+        </a>
+        <div class="findAccountDiv">
+            <img src="./public/icon-lock.png" alt="">
+            <a href="#none" class="idLink">아이디</a>
+            <a href="#none" class="pwLink">비밀번호 찾기</a>
+        </div>
+        <div class="signupDiv">
+            <img src="./public/icon-user.png" alt="">
+            <a href="#none" class="signupLink">회원 가입</a>
+        </div>
+    </article>
 </body>
 </html>

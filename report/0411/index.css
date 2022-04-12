@@ -1,0 +1,89 @@
+@import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+/* reset css */
+
+body, article, p, h2, button, div{
+    margin: 0;
+    padding: 0;
+}
+
+a, a:hover, a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* design */
+
+body{
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+.loginArticle{
+    width: 350px;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 19px 16px 18px;
+    overflow: hidden;
+}
+
+.loginHeader{
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.message{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.loginLink, .loginLink:hover{
+    display: block;
+    color: white;
+    background-color: #711BFF;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 12px;
+    margin: 16px 0;
+}
+
+.loginLink>*{
+    vertical-align: bottom;
+}
+
+.findAccountDiv,
+.findAccountDiv>*,
+.signupDiv>*{
+    float: left;
+}
+
+
+.idLink::after{
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 12px;
+    background-color: #767676;
+    margin: 0 4px;
+}
+
+.signupDiv{
+    float: right;
+}
+
+.findAccountDiv a,
+.signupDiv a{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #767676;
+    margin-top: 2px;
+}
