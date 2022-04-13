@@ -47,7 +47,7 @@ body{
     line-height: 15px;
 }
 
-.loginLink, .loginLink:hover{
+.loginLink, .loginLink:hover, .loginLink:visited{
     display: block;
     color: white;
     background-color: #711BFF;
