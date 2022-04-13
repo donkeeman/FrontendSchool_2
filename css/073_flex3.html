@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        .container{
+            display: flex;
+            width: 300px;
+            height: 100vh;
+            flex-wrap: wrap;
+            /* width를 지정해주고 flex-wrap: nowrap인 경우에는 (컨텐츠들이 넘치면) 빠져나가지 않고 너비가 줄어들어 버린다 */
+            /* width가 지정되지 않은 경우에는 영역을 빠져나간다*/
+
+            /* 아이템이 한 줄인 경우의 정렬 */
+            /* align-items: stretch; (기본값) */
+            /* align-items: center; */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+
+            /* 아이템이 여러 줄인 경우의 정렬 */
+            align-content: center;
+        }
+        li{
+            box-sizing: border-box;
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+            border: 1px solid black;
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+    <ul class="container">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+</body>
+</html>

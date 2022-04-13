@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 첫 번째 child 선택 */
+        .foo:first-child{
+            color: red;
+        }
+
+        /* n번째 child 선택 (n=1부터 시작) */
+        .foo:nth-child(3){
+            color: red;
+        }
+
+        /* 마지막 child 선택 */
+        .foo:last-child{
+            color: red;
+        }
+
+        /* 홀수번째 child 선택, 문제는 이건 또 n이 0부터 시작 */
+        .foo:nth-child(2n+1){
+            color: red;
+        }
+        /* 2n+1과 같음 */
+        .foo:nth-child(2n-1){
+            color: red;
+        }
+        .foo:nth-child(odd){
+            color: red;
+        }
+
+        /* 짝수번째 child 선택, 문제는 이건 또 n이 0부터 시작 */
+        .foo:nth-child(2n){
+            color: aqua;
+        }
+        /* 2n+1과 같음 */
+        .foo:nth-child(even){
+            color: aqua;
+        }
+
+    </style>
+    <title></title>
+</head>
+<body>
+    <ul>
+        <li class="foo">1</li>
+        <li class="foo">2</li>
+        <li class="foo">3</li>
+        <li class="foo">4</li>
+        <li class="foo">5</li>
+    </ul>
+</body>
+</html>
