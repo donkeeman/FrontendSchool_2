@@ -98,8 +98,10 @@ html, body{
     text-align: left;
 }
 
-.loginForm{
-    margin: 24px 0;
+.message::after{
+    content: "";
+    display: block;
+    margin-bottom: 24px;
 }
 
 .userId, .userPw,
@@ -165,4 +167,69 @@ html, body{
     vertical-align: -2px;
     background-color: #767676;
     margin: 0 12px;
+}
+
+.else{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #767676;
+    position: relative;
+    margin: 19px 0;
+}
+
+.else::before, .else::after{
+    display: block;
+    content: "";
+    width: 45%;
+    height: 1px;
+    background-color: #C4C4C4;
+}
+
+.else::before{
+    position: absolute;
+    top: 10px;
+    right: 55%;
+}
+
+.else::after{
+    position: absolute;
+    top: 10px;
+    left: 55%;
+}
+
+.link, .link:hover, .link:visited{
+    display: block;
+    border: 1px solid;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 15px 138px 15px 160px;font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #767676;
+    margin: 10px 0;
+    background-repeat: no-repeat;
+    background-position: 12px;
+}
+
+.link.google{
+    border-color: #767676;
+    background-image: url(./public/google.png);
+}
+
+.link.facebook{
+    border-color: #2D9CDB;
+    background-image: url(./public/facebook.png);
+}
+
+.link.naver{
+    border-color: #00BF18;
+    background-image: url(./public/naver.png);
+}
+
+.link.kakao{
+    border-color: #F2C94C;
+    background-image: url(./public/kakao.png);
 }
