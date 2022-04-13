@@ -118,17 +118,30 @@ html, body{
     margin: 5px 0;
 }
 
+input[type="checkbox"]{
+    display: none;
+}
+
 .keepLoginLabel{
-    display: block;
-    float: left;
+    display: flex;
+    width: fit-content;
+    height: 22px;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 22px;
     color: #767676;
     text-align: left;
     cursor: pointer;
     margin: 17px auto 21px 0;
+    padding-left: 30px;
+    background-image: url(./public/unchecked.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+input[type="checkbox"]:checked + .keepLoginLabel{
+    background-image: url(./public/checked.png);
 }
 
 .loginButton, .loginButton:hover{
@@ -189,13 +202,13 @@ html, body{
 
 .else::before{
     position: absolute;
-    top: 10px;
+    top: 8px;
     right: 55%;
 }
 
 .else::after{
     position: absolute;
-    top: 10px;
+    top: 8px;
     left: 55%;
 }
 
