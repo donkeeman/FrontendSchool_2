@@ -4,7 +4,7 @@
 
 /* reset css */
 
-body, ul, ul li{
+body, div, ul, ul li{
     margin: 0;
     padding: 0;
     font: inherit;
@@ -35,7 +35,7 @@ body{
     align-items: center;
 }
 
-.favoriteLanguage{
+.favoriteLanguageDiv{
     padding: 0 16px;
     box-sizing: border-box;
     border: 1px solid #C4C4C4;
@@ -51,25 +51,16 @@ body{
     background-image: url(./public/icon-Triangle-down.png);
     background-repeat: no-repeat;
     background-position: right 16px center;
-    /* background-color: gray; */
+    display: flex;
+    align-items: center;
 }
 
-.favoriteLanguage:focus{
-    outline: 3px solid #F8E4FF;
-    border: 1px solid #9B51E0;
-    box-sizing: border-box;
-    border-radius: 10px;
-    font-size: 14px;
-    line-height: 16px;
-    background-image: url(./public/icon-Triangle-up.png);
-}
-
-option:disabled{
+.favoriteLanguageSelect{
     display: none;
 }
 
 .dropdownList{
-    visibility: hidden;
+    display: none;
     width: 200px;
     margin: 0 auto;
     border: 1px solid #C4C4C4;
@@ -79,6 +70,7 @@ option:disabled{
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
+    padding: 4px 0;
 }
 
 .dropdownList>li{
@@ -91,20 +83,3 @@ option:disabled{
     background-color: #F8E4FF;
     border-radius: 8px;
 }
-
-option{
-    display: none;
-}
-
-/* option{
-    border: 1px solid #C4C4C4;
-    box-sizing: border-box;
-    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-    padding: 5px 8px;
-}
-
-option:checked{
-    background-color: #F8E4FF;
-    border-radius: 8px;
-} */
