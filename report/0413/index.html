@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
     <title>Login</title>
 </head>
 <body>
@@ -12,7 +13,36 @@
         <h2 class="mainHeader">위니브 로그인</h2>
         <img src="./public/weniv-logo.png" alt="weniv">
         <p class="message">위니브를 더 즐겁고 편리하게 이용하세요.</p>
-        <a href="./modal.html" class="loginLink">로그인</a>
+        <button class="loginButton" id="loginButton">로그인</button>
     </article>
+
+    <div class="modalContainer" id="modalContainer">
+        <article class="modalArticle">
+            <div class="headerContainer">
+                <h2 class="modalHeader">로그인 또는 회원가입</h2>
+            <button type="button" class="closeButton" id="closeButton"></button>
+            </div>
+            <p class="modalMessage">
+                위니브에서 여러분의 궁금증을 해결하세요! :)
+            </p>
+            <form action="./index.html" class="loginForm">
+                <input class="userId" type="text" placeholder="아이디" required>
+                <input class="userPw" type="password" placeholder="비밀번호" required>
+                <input type="checkbox" name="keepLogin" id="keepLoginCheck"><label class="keepLoginLabel" for="keepLoginCheck">로그인 상태 유지</label>
+                <button type="submit" class="modalLoginButton">
+                    로그인
+                </button>
+                <div class="linkContainer">
+                    <a href="#none" class="signupLink">회원가입</a>
+                    <a href="#none" class="findAccountLink">아이디/비밀번호 찾기</a>
+                </div>
+                <p class="else">또는</p>
+                <a href="https://google.com" target="_blank" class="link google">구글 계정으로 로그인</a>
+                <a href="https://www.facebook.com" target="_blank" class="link facebook">페이스북 계정으로 로그인</a>
+                <a href="https://www.naver.com" target="_blank" class="link naver">네이버 계정으로 로그인</a>
+                <a href="https://kakaocorp.com" target="_blank" class="link kakao">카카오 계정으로 로그인</a>
+            </form>
+        </article>
+    </div>
 </body>
 </html>

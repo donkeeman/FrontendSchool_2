@@ -37,7 +37,7 @@ html, body{
     position: relative;
 }
 
-.mainArticle{
+.modalArticle{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -63,7 +63,7 @@ html, body{
     clear: both;
 }
 
-.mainHeader{
+.modalHeader{
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -81,7 +81,7 @@ html, body{
     margin-top: -18px;
 }
 
-.message::before{
+.modalMessage::before{
     display: block;
     content: "";
     width: 100%;
@@ -90,7 +90,7 @@ html, body{
     margin: 18px 0 26px 0;
 }
 
-.message{
+.modalMessage{
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -98,7 +98,7 @@ html, body{
     text-align: left;
 }
 
-.message::after{
+.modalMessage::after{
     content: "";
     display: block;
     margin-bottom: 24px;
