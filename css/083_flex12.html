@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        button {
+            flex: 1;
+            box-sizing: border-box;
+            height: 50px;
+            background-color: pink;
+            border: 1px solid seagreen;
+        }
+
+        button:focus{
+            border: 10px solid black;
+        }
+
+        button:nth-child(2){
+            /* 숫자가 수치에 의미가 있진 않고 큰 값이 뒤로 가는 순서만 부여 */
+            order: 2;
+        }
+        button:nth-child(3){
+            /* 숫자가 수치에 의미가 있진 않고 큰 값이 뒤로 가는 순서만 부여 */
+            order: 3;
+        }
+        button:nth-child(4){
+            /* 숫자가 수치에 의미가 있진 않고 큰 값이 뒤로 가는 순서만 부여 */
+            order: 6;
+        }
+        button:nth-child(5){
+            /* 숫자가 수치에 의미가 있진 않고 큰 값이 뒤로 가는 순서만 부여 */
+            order: 5;
+        }
+        button:nth-child(6){
+            /* 숫자가 수치에 의미가 있진 않고 큰 값이 뒤로 가는 순서만 부여 */
+            order: 4;   
+        }
+    </style>
+</head>
+<body>
+    <ul class="container">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+    </ul>
+</body>
+</html>
