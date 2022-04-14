@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        body, div {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 100px);
+            grid-template-rows: repeat(5, 100px);
+            gap: 10px;
+        }
+
+        .item {
+            /* background-color: pink;
+            border: solid 1px black; */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .item:nth-child(1){
+            grid-column: 1 / span 3;
+            grid-row: 1 / span 2;
+            background-image: url(./image/1.jpg);
+        }
+
+        .item:nth-child(2){
+            grid-column: 1 / span 2;
+            grid-row: 3;
+            background-image: url(./image/2.jpg);
+        }
+
+        .item:nth-child(3){
+            grid-column: 1 / span 2;
+            grid-row: 4 / span 2;
+            background-image: url(./image/3.webp);
+        }
+
+        .item:nth-child(4){
+            grid-column: 4 / span 2;
+            grid-row: 1 / span 3;
+            background-image: url(./image/4.jpg);
+        }
+
+        .item:nth-child(5){
+            grid-column: 3;
+            grid-row: 3;
+            background-image: url(./image/5.webp);
+        }
+
+        .item:nth-child(6){
+            grid-column: 3 / span 3;
+            grid-row: 4 / span 2;
+            background-image: url(./image/6.jpg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        /* scale: 크기 조절 */
+        /* rotate: 각도 조절 */
+        /* translate: 위치 조절 */
+        @keyframes heartbeat{
+            0%{
+                transform: scale(1) rotate(60deg);
+            }
+            25%{
+                transform: scale(2) translateX(20px);
+            }
+            50%{
+                transform: scale(1) rotate(-60deg);
+            }
+            75%{
+                transform: scale(2) translateX(20px);
+            }
+            100%{
+                transform: scale(1) rotate(60deg);
+            }
+        }
+
+        div{
+            background-color: darkred;
+            width: 100px;
+            height: 100px;
+            margin: 100px;
+            transition: all .3s;
+        }
+
+        div:hover{
+            animation: heartbeat 1s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

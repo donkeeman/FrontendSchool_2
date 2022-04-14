@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        .container{
+            display: grid;
+            height: 100vh;
+            /* grid-template-columns: 25% 25% 25% 25%; */
+            grid-template-columns: repeat(4, 25%);
+            /* gap: 10px 20px; */
+            /* grid-gap: 20px; */
+            /* grid-template-rows: 100px 200px 100px; */
+            justify-items: center;
+            align-items: center;
+        }
+
+        .item{
+            background-color: pink;
+            border: 1px solid black;
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+    </div>
+</body>
+</html>
