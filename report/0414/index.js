@@ -23,6 +23,8 @@ langDiv.addEventListener("focusout", function(){
     this.style.fontSize = "12px";
     this.style.lineHeight = "14px";
     this.style.backgroundImage = 'url("./public/icon-Triangle-down.png")';
+    dropdownList.style.display = "none";
+    isListVisible = !isListVisible;
 })
 
 dropdownList.onclick = hideList;
