@@ -46,13 +46,12 @@ body{
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
-    text-align: justify;
-    appearance: none;
     background-image: url(./public/icon-Triangle-down.png);
     background-repeat: no-repeat;
     background-position: right 16px center;
     display: flex;
     align-items: center;
+    cursor: default;
 }
 
 .favoriteLanguageSelect{
