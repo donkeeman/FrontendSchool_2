@@ -28,8 +28,6 @@ body{
 .selectContainer{
     margin: 200px auto 0 auto;
     width: fit-content;
-    display: flex;
-    gap: 9px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -61,7 +59,7 @@ body{
 .dropdownList{
     display: none;
     width: 200px;
-    margin: 0 auto;
+    margin: 9px auto;
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
     box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
