@@ -48,7 +48,7 @@ body{
     line-height: 14px;
     background-image: url(./public/icon-Triangle-down.png);
     background-repeat: no-repeat;
-    background-position: right 16px center;
+    background-position: right 13px center;
     display: flex;
     align-items: center;
     cursor: default;
