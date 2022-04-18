@@ -23,7 +23,6 @@ button, button:hover, button:active{
 
 input, input:focus, input:active{
     color: inherit;
-    outline: 0;
     background-color: inherit;
     border: 0;
 }
@@ -98,19 +97,7 @@ html, body{
     box-sizing: border-box;
     border-radius: 10px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
     padding: 20px 24px 25px 24px;
-}
-
-.headerContainer{
-    padding: 0;
-}
-
-.headerContainer::after{
-    content: "";
-    display: block;
-    clear: both;
 }
 
 .modalHeader{
@@ -118,17 +105,6 @@ html, body{
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-}
-
-.closeButton{
-    float: right;
-    width: 16px;
-    height: 16px;
-    background-image: url(./public/close.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-top: -18px;
 }
 
 .modalMessage::before{
@@ -154,6 +130,14 @@ html, body{
     margin-bottom: 24px;
 }
 
+.hiddenLabel{
+    display: block;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
 .userId, .userPw,
 .userId:focus, .userPw:focus{
     width: 100%;
@@ -176,7 +160,11 @@ html, body{
 }
 
 input[type="checkbox"]{
-    display: none;
+    float: left;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 }
 
 .keepLoginLabel{
@@ -215,28 +203,17 @@ input[type="checkbox"]:checked + .keepLoginLabel{
 }
 
 .linkContainer{
-    display: flex;
-    justify-content: center;
-}
-
-.signupLink, .findAccountLink,
-.signupLink:hover, .findAccountLink:hover,
-.signupLink:visited, .findAccountLink:visited{
     font-style: normal;
     font-weight: 400;
+    display: flex;
+    justify-content: center;
+    color: #767676;
     font-size: 14px;
     line-height: 18px;
-    color: #767676;
 }
 
-.signupLink::after{
-    display: inline-block;
-    content: "";
-    width: 1px;
-    height: 14px;
-    vertical-align: -2px;
-    background-color: #767676;
-    margin: 0 12px;
+.linkContainer>*{
+    margin: 0 6px;
 }
 
 .else{
@@ -303,4 +280,16 @@ input[type="checkbox"]:checked + .keepLoginLabel{
 .link.kakao{
     border-color: #F2C94C;
     background-image: url(./public/kakao.png);
+}
+
+.closeButton{
+    float: right;
+    width: 16px;
+    height: 16px;
+    background-image: url(./public/close.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* ? */
+    margin-top: -667px;
 }
