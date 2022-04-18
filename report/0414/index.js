@@ -2,7 +2,7 @@ let langDiv = document.getElementById("favoriteLanguageDiv");
 let langText = document.getElementById("favoriteLanguageText");
 let dropdownList = document.getElementById("dropdownList");
 let listItems = dropdownList.querySelectorAll("li");
-// 값을 서버로 전송할 때는 필요하다?
+// select는 보이지는 않지만 리스트의 인덱스와 매칭하기 위해서
 let langSelect = document.getElementById("favoriteLanguageSelect");
 
 let isListVisible = false;
@@ -26,9 +26,6 @@ langDiv.addEventListener("focusout", function(){
     dropdownList.style.display = "none";
     isListVisible=!isListVisible;
 })
-
-dropdownList.onclick = function(){
-}
 
 for(let i = 0; i<listItems.length; i++){
     listItems[i].onmousedown = function(){
