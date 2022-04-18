@@ -26,7 +26,7 @@ body{
 }
 
 .selectContainer{
-    margin: 25% auto;
+    margin: 200px auto 0 auto;
     width: fit-content;
     display: flex;
     gap: 9px;
