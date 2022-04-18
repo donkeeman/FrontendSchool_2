@@ -29,8 +29,11 @@ langDiv.addEventListener("focusout", function(){
 
 for(let i = 0; i<listItems.length; i++){
     listItems[i].onmousedown = function(){
+        // selected 초기화
+        for(let j = 0; j<langSelect.options.length; j++)
+            langSelect.options[j].selected = false;
         // 선택한 리스트의 인덱스를 option의 인덱스와 매칭
-        langSelect.options[i+1].setAttribute("selected", "selected");
+        langSelect.options[i+1].selected = true;
         langText.innerHTML = listItems[i].innerHTML;
         dropdownList.style.display = "none";
         if(isListVisible)
