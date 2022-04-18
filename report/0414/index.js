@@ -32,7 +32,7 @@ dropdownList.onclick = function(){
 
 for(let i = 0; i<listItems.length; i++){
     listItems[i].onmousedown = function(){
-        // 값을 서버로 전송할 때는 필요하다?
+        // 선택한 리스트의 인덱스를 option의 인덱스와 매칭
         langSelect.options[i+1].setAttribute("selected", "selected");
         langText.innerHTML = listItems[i].innerHTML;
         dropdownList.style.display = "none";
