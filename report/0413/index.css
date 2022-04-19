@@ -247,10 +247,20 @@ input[type="checkbox"]:checked + .keepLoginLabel{
 }
 
 .link::before{
-    left: 0;
     content:"";
     display: block;
     float: left;
+    width: 28px;
+    height: 28px;
+    background-image: url(./public/css_sprites_retina.png);
+    background-repeat: no-repeat;
+    background-size: 152px 38px;
+}
+
+.link::after{
+    content:"";
+    display: block;
+    float: right;
     width: 28px;
     height: 28px;
     background-image: url(./public/css_sprites.png);
@@ -262,7 +272,7 @@ input[type="checkbox"]:checked + .keepLoginLabel{
     border: 1px solid;
     box-sizing: border-box;
     border-radius: 5px;
-    padding: 15px 138px 15px 160px;
+    padding: 15px 13px;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -276,6 +286,10 @@ input[type="checkbox"]:checked + .keepLoginLabel{
 }
 
 .link.google::before{
+    background-position: -43px -8px;
+}
+
+.link.google::after{
     background-position: -58px -13px;
 }
 
@@ -284,6 +298,10 @@ input[type="checkbox"]:checked + .keepLoginLabel{
 }
 
 .link.facebook::before{
+    background-position: -5px -8px;
+}
+
+.link.facebook::after{
     background-position: -10px -13px;
 }
 
@@ -292,6 +310,10 @@ input[type="checkbox"]:checked + .keepLoginLabel{
 }
 
 .link.naver::before{
+    background-position: -119px -8px;
+}
+
+.link.naver::after{
     background-position: -154px -13px;
 }
 
@@ -300,6 +322,10 @@ input[type="checkbox"]:checked + .keepLoginLabel{
 }
 
 .link.kakao::before{
+    background-position: -81px -8px;
+}
+
+.link.kakao::after{
     background-position: -106px -13px;
 }
 
