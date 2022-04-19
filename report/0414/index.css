@@ -67,15 +67,12 @@ body{
     cursor: pointer;
 }
 
-.favLangButton.on{
-    background-image: url(./public/icon-Triangle-up.png);
-}
-
 .favLangButton:focus{
     outline: 3px solid #F8E4FF;
     border: 1px solid #9B51E0;
     font-size: 14px;
     line-height: 16px;
+    background-image: url(./public/icon-Triangle-up.png);
 }
 
 .favoriteLanguageSelect{
@@ -96,7 +93,11 @@ body{
     padding: 4px 0;
 }
 
-.favLangButton.on + .dropdownList{
+.dropdownList.on{
+    display: block;
+}
+
+.favLangButton:active + .dropdownList{
     display: block;
 }
 
@@ -111,7 +112,8 @@ body{
     cursor: pointer;
 }
 
-.dropdownList li button:focus, .dropdownList li button:hover{
+.dropdownList li button:focus,
+.dropdownList li button:hover{
     background-color: #F8E4FF;
     border-radius: 8px;
 }
