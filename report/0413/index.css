@@ -246,6 +246,17 @@ input[type="checkbox"]:checked + .keepLoginLabel{
     left: 55%;
 }
 
+.link::before{
+    left: 0;
+    content:"";
+    display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    background-image: url(./public/css_sprites.png);
+    background-repeat: no-repeat;
+}
+
 .link, .link:hover, .link:visited{
     display: block;
     border: 1px solid;
@@ -258,28 +269,38 @@ input[type="checkbox"]:checked + .keepLoginLabel{
     line-height: 20px;
     color: #767676;
     margin-top: 10px;
-    background-repeat: no-repeat;
-    background-position: 12px;
 }
 
 .link.google{
     border-color: #767676;
-    background-image: url(./public/google.png);
+}
+
+.link.google::before{
+    background-position: -58px -13px;
 }
 
 .link.facebook{
     border-color: #2D9CDB;
-    background-image: url(./public/facebook.png);
+}
+
+.link.facebook::before{
+    background-position: -10px -13px;
 }
 
 .link.naver{
     border-color: #00BF18;
-    background-image: url(./public/naver.png);
+}
+
+.link.naver::before{
+    background-position: -154px -13px;
 }
 
 .link.kakao{
     border-color: #F2C94C;
-    background-image: url(./public/kakao.png);
+}
+
+.link.kakao::before{
+    background-position: -106px -13px;
 }
 
 .closeButton{

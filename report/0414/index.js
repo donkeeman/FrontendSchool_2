@@ -1,25 +1,20 @@
-let langButton = document.getElementById("favoriteLanguageButton");
+let langButton = document.getElementById("favLangButton");
 let dropdownList = document.getElementById("dropdownList");
 let listItems = dropdownList.querySelectorAll("li");
 // select는 보이지는 않지만 리스트의 인덱스와 매칭하기 위해서
 let langSelect = document.getElementById("favoriteLanguageSelect");
 
+let buttonClassName = langButton.className;
+let listClassName = dropdownList.className;
+
 langButton.addEventListener("focusin", function(){
-    dropdownList.style.display = "block";
-    this.style.outline = "3px solid #F8E4FF";
-    this.style.border = "1px solid #9B51E0";
-    this.style.fontSize = "14px";
-    this.style.lineHeight = "16px";
-    this.style.backgroundImage = 'url("./public/icon-Triangle-up.png")';
+    langButton.className =  buttonClassName + " on";
+    dropdownList.className = listClassName + " on";
 })
 
 langButton.addEventListener("focusout", function(){
-    dropdownList.style.display = "none";
-    this.style.outline = "none";
-    this.style.border = "1px solid #C4C4C4";
-    this.style.fontSize = "12px";
-    this.style.lineHeight = "14px";
-    this.style.backgroundImage = 'url("./public/icon-Triangle-down.png")';
+    langButton.className = buttonClassName;
+    dropdownList.className = listClassName;
 })
 
 for(let i = 0; i<listItems.length; i++){
@@ -30,6 +25,6 @@ for(let i = 0; i<listItems.length; i++){
         // 선택한 리스트의 인덱스를 option의 인덱스와 매칭
         langSelect.options[i+1].selected = true;
         langButton.innerHTML = listItems[i].innerHTML;
-        dropdownList.style.display = "none";
+        dropdownList.className = listClassName;
     }
 }

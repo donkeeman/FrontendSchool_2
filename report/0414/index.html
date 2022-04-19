@@ -10,8 +10,6 @@
 </head>
 <body>
     <div class="selectContainer">
-        <button class="favoriteLanguageButton" id="favoriteLanguageButton">최애 프로그래밍 언어
-        </button>
         <select name="favoriteLanguage" class="favoriteLanguageSelect" id="favoriteLanguageSelect">
             <option value="" selected disabled>최애 프로그래밍 언어</option>
             <option value="python">Python</option>
@@ -20,12 +18,17 @@
             <option value="csharp">C#</option>
             <option value="c_cpp">C/C++</option>
         </select>
+
+        <h2 class="header">최애 프로그래밍 언어를 선택해 주세요.</h2>
+        <button class="favLangButton text-elipsis" id="favLangButton">최애 프로그래밍 언어
+        </button>
+        
         <ul class="dropdownList" id="dropdownList">
-            <li>Python</li>
-            <li>Java</li>
-            <li>JavaScript</li>
-            <li>C#</li>
-            <li>C/C++</li>
+            <li><button class="text-elipsis" type="button">Python</button></li>
+            <li><button class="text-elipsis" type="button">Java</button></li>
+            <li><button class="text-elipsis" type="button">JavaScript</button></li>
+            <li><button class="text-elipsis" type="button">C#</button></li>
+            <li><button class="text-elipsis" type="button">C++</button></li>
         </ul>
     </div>
 </body>

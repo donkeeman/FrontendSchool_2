@@ -12,6 +12,8 @@ body, div, ul, ul li{
 
 button{
     background-color: inherit;
+    border: none;
+    outline: none;
 }
 
 select{
@@ -29,13 +31,26 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.header{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+}
+
 .selectContainer{
     margin: 200px auto;
     width: fit-content;
 }
 
-.favoriteLanguageButton{
-    padding: 0 16px;
+.text-elipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.favLangButton{
+    padding: 0 20px 0 10px;
     box-sizing: border-box;
     border: 1px solid #C4C4C4;
     border-radius: 10px;
@@ -49,7 +64,18 @@ body{
     background-repeat: no-repeat;
     background-position: right 13px center;
     text-align: left;
-    cursor: default;
+    cursor: pointer;
+}
+
+.favLangButton.on{
+    background-image: url(./public/icon-Triangle-up.png);
+}
+
+.favLangButton:focus{
+    outline: 3px solid #F8E4FF;
+    border: 1px solid #9B51E0;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .favoriteLanguageSelect{
@@ -70,13 +96,22 @@ body{
     padding: 4px 0;
 }
 
-.dropdownList>li{
-    margin: 5px 8px;
+.favLangButton.on + .dropdownList{
+    display: block;
+}
+
+.dropdownList li{
+    padding: 5px 8px;
+}
+
+.dropdownList li button{
+    text-align: left;
+    width: 100%;
     padding: 7px 10px;
     cursor: pointer;
 }
 
-.dropdownList>li:hover{
+.dropdownList li button:focus, .dropdownList li button:hover{
     background-color: #F8E4FF;
     border-radius: 8px;
 }
