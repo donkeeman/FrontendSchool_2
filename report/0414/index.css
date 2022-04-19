@@ -10,6 +10,10 @@ body, div, ul, ul li{
     font: inherit;
 }
 
+button{
+    background-color: inherit;
+}
+
 select{
     border: none;
     outline: none;
@@ -26,14 +30,11 @@ body{
 }
 
 .selectContainer{
-    margin: 200px auto 0 auto;
+    margin: 200px auto;
     width: fit-content;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-.favoriteLanguageDiv{
+.favoriteLanguageButton{
     padding: 0 16px;
     box-sizing: border-box;
     border: 1px solid #C4C4C4;
@@ -47,8 +48,7 @@ body{
     background-image: url(./public/icon-Triangle-down.png);
     background-repeat: no-repeat;
     background-position: right 13px center;
-    display: flex;
-    align-items: center;
+    text-align: left;
     cursor: default;
 }
 
