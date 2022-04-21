@@ -39,6 +39,7 @@ body {
 	font-family: "SpoqaHanSansNeo-Regular";
 	font-size: 1.6rem;
 	color: #121314;
+	white-space: wrap;
 }
 
 strong {
@@ -131,10 +132,40 @@ strong {
 
 /* 태블릿 */
 @media (max-width: 768px) {
-	
+	.wrap{
+		flex-direction: column;
+		margin: 10rem auto;
+	}
+	.section-text p {
+		margin-top: 1.8rem;
+		font-size: 1.8rem;
+		color: #47494d;
+		line-height: 1.5;
+	}
+	.section-field ul{
+		margin-top: 60px;
+		flex-direction: row;
+	}
 }
 
 /* 모바일 */
 @media (max-width: 500px) {
-	
+	.wrap{
+		flex-direction: column;
+		margin: 10rem auto;
+	}
+	.section-text h1 {
+		font-size: 3.6rem;
+		font-weight: normal;
+	}
+	.section-text p {
+		margin-top: 1.4rem;
+		font-size: 1.4rem;
+		color: #47494d;
+		line-height: 1.5;
+	}
+	.section-field ul{
+		margin-top: 60px;
+		flex-direction: column;
+	}
 }
