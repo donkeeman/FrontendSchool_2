@@ -1,0 +1,25 @@
+@debug 10s + 15s; // 25s
+@debug 1in - 10px; // 0.8958333333in
+@debug 5px * 3px; // 15px*px
+@debug 1in % 9px; // 0.0625in (1in == 96px)
+
+.one{
+    font-size: 10px + 10px;
+}
+
+.two{
+    font-size: 30px - 10px;
+}
+
+.three{
+    font-size: 10px * 2;
+}
+
+// 나눗셈은 ()로 묶거나 변수와 사용해야 함
+.four{
+    font-size: (200px / 10);
+}
+
+.five{
+    font-size: 41px % 21;
+}

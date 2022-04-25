@@ -1,0 +1,12 @@
+%base-box {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+// %선택자를 이용하면 base-box는 사용하지 않고 box로 사용하겠다는 의미
+// css로 변환하면 box에 모든 속성이 통합된 것으로 나오고 %는 컴파일되지 않는다
+.comment-user {
+    @extend %base-box;
+    border: 5px solid black;
+}

@@ -1,0 +1,26 @@
+.square-av {
+  width: 100px;
+  height: 100px;
+}
+
+.circle-av {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.test-av {
+  width: 100px;
+  height: 100px;
+}
+
+.banner {
+  background-color: #f2ece4;
+  color: #036;
+}
+
+body.dark .banner {
+  background-color: #6b717f;
+  color: #d2e1dd;
+}
+/*# sourceMappingURL=021_if2.css.map */

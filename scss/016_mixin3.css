@@ -1,0 +1,14 @@
+.button {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  background-color: aqua;
+}
+
+.button2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: aqua;
+}
+/*# sourceMappingURL=016_mixin3.css.map */

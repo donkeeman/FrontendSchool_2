@@ -1,0 +1,30 @@
+$md : "screen and (min-width:390px)";
+$lg : "screen and (min-width:1280px)";
+
+.card {
+    width: 100px;
+    height: 200px;
+}
+
+.font {
+    font-size: 18px;
+}
+
+// 변수 안의 문자열을 그대로 넣어줄 대는 #{$변수명} 으로 해 줘야 함
+@media #{$md} {
+    .font {
+        font-size: 16px;
+    }
+    .card {
+        background-color: red;
+    }
+}
+
+@media #{$lg} {
+    .font {
+        font-size: 18px;
+    }
+    .card {
+        background-color: green;
+    }
+}

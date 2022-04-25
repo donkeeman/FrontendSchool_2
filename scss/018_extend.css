@@ -1,0 +1,10 @@
+.base-box, .comment-user {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+
+.comment-user {
+  border: 5px solid black;
+}
+/*# sourceMappingURL=018_extend.css.map */

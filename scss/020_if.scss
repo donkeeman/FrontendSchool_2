@@ -1,0 +1,19 @@
+@mixin button($color) {
+    @if $color == black {
+        font-size: 32px;
+        background-color: white;
+        color: $color;
+    } @else if $color == white {
+        font-size: 24px;
+        background-color: black;
+        color: $color;
+    } @else {
+        font-size: 16px;
+        background-color: blue;
+        color: $color;
+    }
+}
+
+.btn {
+    @include button(red);
+}

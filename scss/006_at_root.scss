@@ -1,0 +1,11 @@
+.one {
+    color: red;
+    .two {
+        color: blue;
+        // 문법 상 부모 요소에서 벗어나야 할 때가 있다
+        // 그럴 때 @at-root를 사용하면 부모에게서 탈출했다가 돌아옴
+        @at-root .three {
+            color: green;
+        }
+    }
+}

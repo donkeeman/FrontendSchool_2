@@ -1,0 +1,10 @@
+.base-box {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.comment-user {
+    @extend .base-box;
+    border: 5px solid black;
+}

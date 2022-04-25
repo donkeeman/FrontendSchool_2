@@ -1,0 +1,15 @@
+// 인수를 넣는 것도 가능
+@mixin box($color) {
+    width: 100px;
+    height: 100px;
+    background-color: $color;
+}
+
+.redCard{
+    // background-color: red;
+    @include box(red);
+}
+
+.blueCard{
+    @include box(blue);
+}

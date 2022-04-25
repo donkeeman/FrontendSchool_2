@@ -1,0 +1,13 @@
+@mixin sample{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    @content;
+}
+
+// 추후에 mixin 안에다 속성을 추가해 줄 수도 있음
+a {
+	@include sample{
+        color: white;
+	}
+}

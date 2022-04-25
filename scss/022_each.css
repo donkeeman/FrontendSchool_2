@@ -1,0 +1,24 @@
+.box-color:nth-child($i) {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+
+.box-color:nth-child($i) {
+  background-color: green;
+  width: 100px;
+  height: 100px;
+}
+
+.box-color:nth-child($i) {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+}
+
+.box-color:nth-child($i) {
+  background-color: pink;
+  width: 100px;
+  height: 100px;
+}
+/*# sourceMappingURL=022_each.css.map */

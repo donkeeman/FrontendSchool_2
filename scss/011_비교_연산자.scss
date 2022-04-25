@@ -1,0 +1,11 @@
+@debug 100 > 50; // true
+@debug 10px < 17px; // true
+@debug 96px >= 1in; // true
+@debug 1000ms <= 1s; // true
+
+@debug 100px > 10s;
+// Error: Incompatible units px and s
+
+@debug 100 > 50px; // true
+@debug 10px < 17; // true
+// Not Error

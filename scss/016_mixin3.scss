@@ -1,0 +1,15 @@
+// 인자에 기본값 설정도 가능
+@mixin pri-button($width, $height, $radius:10px){
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+    background-color: aqua;
+}
+
+.button{
+    @include pri-button(100px, 100px, 20px);
+}
+
+.button2{
+    @include pri-button(100px, 100px);
+}
