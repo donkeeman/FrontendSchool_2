@@ -1,0 +1,8 @@
+@function pow($value){
+    $value: $value * $value;
+    @return $value;
+}
+
+.box{
+    font-size: pow(10);
+}

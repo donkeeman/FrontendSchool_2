@@ -1,0 +1,21 @@
+## 컨벤션
+ - 네이버 컨벤션
+    - https://nuli.navercorp.com/data/convention/NHN_Coding_Conventions_for_Markup_Languages.pdf
+    - 클래스명과 폴더명, 이미지명 등은 예약된 이름을 사용한다.
+    - 태그에서 class와 style은 마지막에 선언한다.
+    - z-index는 10 단위로 사용한다.
+ - google code convention
+    - https://google.github.io/styleguide/
+    - 들여쓰기는 space 2번
+    - `<!-- TODO: 할 일 -->` 처럼 TODO를 사용한다. 익스텐션을 이용하여 목록화도 할 수 있다.
+    - script나 css 등 외부 파일을 불러올 때, type은 적지 않는다.
+    - 생성자와 괄호 사이에 공백을 넣는다.
+ - toast 컨벤션
+    - https://ui.toast.com/fe-guide/ko_HTMLCSS
+    - https://ui.toast.com/fe-guide/ko_CODING-CONVENTION
+    - boolean 값이 true인 경우 명시하지 않는다.
+    - 단일 내용은 한 줄에 표시한다. (괄호 줄바꿈 x)
+ - airbnb 컨벤션
+    - https://github.com/airbnb/javascript
+ - class101 컨벤션
+    - https://jobs.class101.net/dev/event/secret_codereview
