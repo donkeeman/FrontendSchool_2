@@ -72,16 +72,13 @@ h3{
 }
 
 .footer{
-    width: 100%;
-    display: block;
-    position: absolute;
-    bottom: 0;
+    float: right;
+    margin-right: 2%;
 }
 
 .footer a{
     display: block;
-    float: right;
-    margin-right: 2%;
+    text-align: right;
     font-weight: bold;
     font-style: oblique;
 }
