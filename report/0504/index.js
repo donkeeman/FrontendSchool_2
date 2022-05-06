@@ -65,11 +65,6 @@ const answer1 = userInfo.map( user => {
 
 const answer2 = userInfo.filter( user => user.age >= 27).map(user => user._id);
 
-// const answer3 = userInfo.map( user => {
-//     if(user._id == '6271fd40e30856d15651c60c')
-//         return user.name;
-// });
-
 const answer3 = userInfo.filter( user => user._id == '6271fd40e30856d15651c60c').map(user => user.name);
 
 let ageSum = 0;
