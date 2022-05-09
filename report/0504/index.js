@@ -68,15 +68,18 @@ const answer2 = userInfo.filter( user => user.age >= 27).map(user => user._id);
 const answer3 = userInfo.filter( user => user._id == '6271fd40e30856d15651c60c').map(user => user.name);
 
 let ageSum = 0;
-const ageArray = userInfo.map( user => {
-    ageSum += user.age;
-});
+// const ageArray = userInfo.map( user => {
+//     ageSum += user.age;
+// });
+
+const ageArray = userInfo.map( user => user.age ).reduce((a, b) => a+b, 0);
 
 const answer4 = ageSum / ageArray.length;
 
 const maleArray = userInfo.filter(user => user.gender == "male");
 
 const answer5 = `${maleArray.length}:${userInfo.length - maleArray.length}`;
+
 
 document.write(`1. user의 id와 name, age를 가진 새로운 array<br><br>`);
 document.write(`- ${JSON.stringify(answer1)}<br><br>`);
