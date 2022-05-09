@@ -76,10 +76,28 @@ const ageArray = userInfo.map( user => user.age ).reduce((a, b) => a+b, 0);
 
 const answer4 = ageSum / ageArray.length;
 
+let answer5, temp;
+
 const maleArray = userInfo.filter(user => user.gender == "male");
 
-const answer5 = `${maleArray.length}:${userInfo.length - maleArray.length}`;
+if((userInfo.length - maleArray.length) > maleArray.length){
+    temp = (userInfo.length - maleArray.length) / maleArray.length;
+    f(temp);
+    answer5 = `1:${temp}`;
+}
+else{
+    temp = maleArray.length / (userInfo.length - maleArray.length);
+    f(temp);
+    answer5 = `${temp}:1`;
+}
 
+function f(number){
+	// 기본 소수점을 두 자리로 고정한 후,
+	// 소수와 그걸 정수로 변환한 값이 일치한다면 (ex. 1.00 == 1이라면)
+	if(number.toFixed(2) === number)
+		// 소수를 정수화함 (ex. 1.00 을 1으로 변환)
+		number = parseInt(number);
+}
 
 document.write(`1. user의 id와 name, age를 가진 새로운 array<br><br>`);
 document.write(`- ${JSON.stringify(answer1)}<br><br>`);
