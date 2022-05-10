@@ -83,7 +83,6 @@ const comma2 = (n) => {
         return n;
     n += "";
     for(let i = n.length-3; i > 0; i-=3){
-        console.log(i);
         n = n.slice(0, i) + "," + n.slice(i);
     }
     return n;
