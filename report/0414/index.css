@@ -97,10 +97,6 @@ body{
     display: block;
 }
 
-.favLangButton:active + .dropdownList{
-    display: block;
-}
-
 .dropdownList li{
     padding: 5px 8px;
 }
