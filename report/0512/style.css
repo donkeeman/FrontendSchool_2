@@ -1,0 +1,101 @@
+/* reset */
+
+article, ul, ul li{
+    margin: 0;
+    padding: 0;
+}
+
+button, button:focus, button:acitve, button:hover{
+    margin: 0;
+    padding: 0;
+    background-color: inherit;
+    border: 0;
+    font: inherit;
+}
+
+/* design */
+
+body{
+    padding: 0 2%;
+    font-size: 10px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+article{
+    /* background-color: yellowgreen; */
+    position: relative;
+    max-width: 700px;
+    margin: 100px auto;
+}
+
+.crs{
+    list-style-type: none;
+    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 500px;
+    /* border: 5px solid black; */
+}
+
+.dirButton{
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto -3rem;
+    background-color: transparent;
+    border: none;
+    font-size: 6rem;
+    line-height: 6rem;
+    color: darkslategray;
+    cursor: pointer;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.dirButton.prev{
+    left: 0;
+}
+
+.dirButton.next{
+    right: 0;
+}
+
+.crs li{
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    /* position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; */
+}
+
+.crs li.hide{
+    display: none;
+}
+
+.crs li.show{
+    display: list-item;
+}
+
+.crs li.left{
+    transform: rotate3d(0, 1, 0, -30deg) translateZ(10px);
+}
+
+.crs li.mid{
+    transform: scale(1.2) rotate3d(1, 1, 1, 0deg);
+}
+
+.crs li.right{
+    transform: rotate3d(0, 1, 0, 30deg) translateZ(10px);
+}
