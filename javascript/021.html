@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .redBg{
+            background-color: red;
+        }
+        .yellowBg{
+            background-color: yellow;
+        }
+        .greenBg{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        점심 식단
+        <article id="container">
+            <ul>
+                <li>탕수육</li>
+                <li class="item-second">유산슬</li>
+                <li>짜장면</li>
+            </ul>
+        </article>
+        저녁 식단
+        <article>
+            <ul>
+                <li>된장국</li>
+                <li class="item-second">김치찌게</li>
+                <li>해장국</li>
+            </ul>
+        </article>
+
+        <div id="color" style="width: 100px; height: 100px;"></div>
+        <button class="colorButton red">빨강</button>
+        <button class="colorButton yellow">노랑</button>
+        <button class="colorButton green">초록</button>
+    </body>
+    <script>
+        console.log(document.getElementsByClassName("item-second")[0].innerHTML);
+        console.log(document.getElementsByTagName("li")[0].innerHTML);
+
+        const color = document.querySelector("#color");
+        // document.querySelector(".red").onclick = () => {
+        //     color.classList.remove(...color.classList);
+        //     color.classList.add("redBg");
+        // }
+        // document.querySelector(".yellow").onclick = () => {
+        //     color.classList.remove(...color.classList);
+        //     color.classList.add("yellowBg");
+        // }
+        // document.querySelector(".green").onclick = () => {
+        //     color.classList.remove(...color.classList);
+        //     color.classList.add("greenBg");
+        // }
+
+        document.querySelectorAll(".colorButton").forEach((element) => {
+            element.addEventListener("click", () => {
+                color.classList.remove(...color.classList);
+                if(element.classList.contains("red"))
+                    color.classList.add("redBg");
+                else if(element.classList.contains("yellow"))
+                    color.classList.add("yellowBg");
+                else
+                    color.classList.add("greenBg");
+            })
+        })
+    </script>
+</body>
+</html>
