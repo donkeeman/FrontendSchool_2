@@ -1,32 +1,28 @@
 const prevButton = document.querySelector("#prevButton");
 const nextButton = document.querySelector("#nextButton");
+const carousel = document.querySelector(".carousel");
 const listItems = document.querySelectorAll("Li");
 
-nextButton.addEventListener("click", () => {
-    for(let item of listItems){}
-    for(let i = 0; i<listItems.length-1; i++) {
-        if(listItems[i].classList.contains("left")){
-            listItems[i].classList.remove(...listItems[i].classList);
-            listItems[i].classList.add("hide");
-        }
-        else if(listItems[i].classList.contains("mid")){
-            listItems[i].classList.remove("mid");
-            listItems[i].classList.add("left");
-        }
-        else if(listItems[i].classList.contains("right")){
-            console.log(i);
-            listItems[i].classList.remove("right");
-            listItems[i].classList.add("mid");
+const carouselItems = [
+    "./public/001.png",
+    "./public/004.png",
+    "./public/007.png",
+];
 
-            if(i >= listItems.length){
-                listItems[0].classList.remove("hide");
-                listItems[0].classList.add("show", "right");
-            }
-            else{
-                listItems[i+1].classList.remove("hide");
-                listItems[i+1].classList.add("show", "right");
-            }
-            break;
-        }
+const createItems = (n) => {
+    for(let i = 0; i<n; i++){
+        let item = document.createElement("Li");
+        let itemImage = document.createElement("Img");
+        itemImage.src = carouselItems[i];
+        item.appendChild(itemImage);
+        item.style.transform = "translateZ(2rem) rotateY(" + 360/n*(1-i) + "deg)";
+        carousel.appendChild(item);
     }
+}
+
+
+window.addEventListener("load", createItems(carouselItems.length));
+
+nextButton.addEventListener("click", () => {
+   
 });
