@@ -1,6 +1,6 @@
 /* reset */
 
-article, ul, ul li{
+p, article, ul, ul li{
     margin: 0;
     padding: 0;
 }
@@ -19,6 +19,11 @@ body{
     padding: 0 2%;
     font-size: 10px;
     font-family: 'Nanum Gothic', sans-serif;
+}
+
+p{
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 article{
