@@ -14,15 +14,18 @@ const carouselItems = [
     {
         src: "./public/007.png",
         alt: "꼬부기",
-    },{
+    },
+    {
         src: "./public/152.png",
         alt: "치코리타",
-    },{
+    },
+    {
         src: "./public/155.png",
         alt: "브케인",
-    },{
+    },
+    {
         src: "./public/158.png",
-        alt: "꼬부기",
+        alt: "리아코",
     },
 ]
 
