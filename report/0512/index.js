@@ -42,7 +42,7 @@ const createItems = (n) => {
 }
 
 const rotateCarousel = (n) => {
-    carousel.style.transform = "translateZ(-300px) rotateY(" + (n)/carouselItems.length*360 + "deg)";
+    carousel.style.transform = "translateZ(-300px) rotateY(" + n/carouselItems.length*360 + "deg)";
 };
 
 let currentIndex = 0;
