@@ -55,4 +55,4 @@ nextButton.addEventListener("click", () => {
 
 prevButton.addEventListener("click", () => {
     rotateCarousel(++currentIndex);
-})
+});
