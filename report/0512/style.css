@@ -5,7 +5,7 @@ p, article, ul, ul li{
     padding: 0;
 }
 
-button, button:focus, button:hover{
+button, button:focus, button:hover, button:active{
     margin: 0;
     padding: 0;
     background-color: inherit;
@@ -41,7 +41,7 @@ p{
     background-color: white;
 }
 
-.dirButton{
+.dirButton, .dirButton:hover, .dirButton:focus, .dirButton:active{
     width: 6rem;
     height: 6rem;
     position: absolute;
