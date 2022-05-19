@@ -10,29 +10,28 @@
 
 <body>
     <script>
+        // function Factory() { }
+        // const item = new Factory();
 
-        const me = {
-            name: '한재현',
-            address: '제주도 제주시 인다 1길',
-            phoneNum: '010-8001-6536',
-            canWalk: function () {
-                console.log('재현이가 걷는다.');
-            },
-            teaching: function (student) {
-                student.levelUp();
+        // function NewFactory(name) {
+        //     this.name = name;
+        //     this.sayYourName = function () {
+        //         console.log(`삐리비리비리 제 이름은 ${this.name}입니다.`);
+        //     }
+        // }
+
+        // const robot1 = new NewFactory('재현');
+
+        const foods = ['짜장면', '뽁음밥', '해장국', '치킨'];
+
+        function FoodBot(foodNames) {
+            this.menu = foodNames;
+            this.sayMenu = function () {
+                console.log(this.menu[Math.floor(Math.random() * this.menu.length)]);
             }
         }
 
-
-
-        const student = {
-            level: 1,
-            levelUp: function () {
-                this.level++;
-            }
-        }
-
-        me.teaching(student);
+        const foodBotMark1 = new FoodBot(foods);
     </script>
 </body>
 

@@ -10,28 +10,67 @@
 
 <body>
     <script>
-        // function Factory() { }
-        // const item = new Factory();
+        // function NewFactory2(name) {
+        //     this.name = name
+        // }
 
-        // function NewFactory(name) {
-        //     this.name = name;
-        //     this.sayYourName = function () {
-        //         console.log(`삐리비리비리 제 이름은 ${this.name}입니다.`);
+        // NewFactory2.prototype.sayYourName = function () {
+        //     console.log(`삐리비리. 제 이름은 ${this.name}입니다. 주인님.`);
+        // }
+
+        // const foods = ['짜장면', '뽁음밥', '해장국', '치킨'];
+
+        // function FoodBot(foodNames) {
+        //     this.menu = foodNames;
+        // }
+
+        // FoodBot.prototype.sayMenu = function () {
+        //     console.log(this.menu[Math.floor(Math.random() * this.menu.length)]);
+        // };
+
+        // const foodBotMark1 = new FoodBot(foods);
+
+        // const me = {
+        //     name: '한재현',
+        //     address: '제주도 제주시 인다 1길',
+        //     phoneNum: '010-8001-6536',
+        //     canWalk: function () {
+        //         console.log('재현이가 걷는다.');
+        //     },
+        //     teaching: function (student) {
+        //         student.levelUp();
         //     }
         // }
 
-        // const robot1 = new NewFactory('재현');
+        // const student = {
+        //     level: 1,
+        //     levelUp: function () {
+        //         this.level++;
+        //     }
+        // }
 
-        const foods = ['짜장면', '뽁음밥', '해장국', '치킨'];
-
-        function FoodBot(foodNames) {
-            this.menu = foodNames;
-            this.sayMenu = function () {
-                console.log(this.menu[Math.floor(Math.random() * this.menu.length)]);
-            }
+        function Me(name, address, phoneNum) {
+            this.name = name;
+            this.address = address;
+            this.phoneNum = phoneNum;
         }
 
-        const foodBotMark1 = new FoodBot(foods);
+        Me.prototype.canWalk = function () {
+            console.log('재현이가 걷는다.');
+        }
+
+        Me.prototype.teaching = function (student) {
+            student.levelUp();
+        }
+
+        function Student(level) {
+            this.level = level;
+        }
+
+        Student.prototype.levelUp = function () {
+            this.level++;
+        }
+
     </script>
 </body>
 

@@ -9,33 +9,21 @@
 </head>
 
 <body>
-    <!-- 앵커의 기본 동작을 중지 -->
-    <!-- <a href="" class="link">네이버 링크입니다만..</a>
-    <script>
-        const link = document.querySelector('.link');
-        link.addEventListener('click', (event) => {
-            console.log('clicked');
-            event.preventDefault();
-        })
-    </script> -->
-    <!-- submit 의 기본 동작을 중지 -->
     <form action="">
         <button type="submit" class="submit">제출</button>
     </form>
 
     <script>
-        // const submit = document.querySelector('.submit');
-        // submit.addEventListener('click', (event) => {
-        //     console.log('clicked');
-        //     event.preventDefault();
-
-        // })
-
-        window.addEventListener('', (event) => {
-            alert('오른쪽 클릭이 제한됩니다!');
+        const submit = document.querySelector('.submit');
+        submit.addEventListener('click', (event) => {
+            event.stopPropagation();
+            console.log('clicked');
             event.preventDefault();
+        }, true);
 
-        })
+        document.body.addEventListener('click', () => {
+            console.log('event still alive!');
+        }, true);
     </script>
 </body>
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
@@ -10,65 +10,25 @@
 
 <body>
     <script>
-        // function NewFactory2(name) {
-        //     this.name = name
-        // }
+        function Parent() {
+            this.name = '재현';
+        }
 
-        // NewFactory2.prototype.sayYourName = function () {
-        //     console.log(`삐리비리. 제 이름은 ${this.name}입니다. 주인님.`);
-        // }
-
-        // const foods = ['짜장면', '뽁음밥', '해장국', '치킨'];
-
-        // function FoodBot(foodNames) {
-        //     this.menu = foodNames;
-        // }
-
-        // FoodBot.prototype.sayMenu = function () {
-        //     console.log(this.menu[Math.floor(Math.random() * this.menu.length)]);
-        // };
-
-        // const foodBotMark1 = new FoodBot(foods);
-
-        // const me = {
-        //     name: '한재현',
-        //     address: '제주도 제주시 인다 1길',
-        //     phoneNum: '010-8001-6536',
-        //     canWalk: function () {
-        //         console.log('재현이가 걷는다.');
-        //     },
-        //     teaching: function (student) {
-        //         student.levelUp();
-        //     }
-        // }
-
-        // const student = {
-        //     level: 1,
-        //     levelUp: function () {
-        //         this.level++;
-        //     }
-        // }
-
-        function Me(name, address, phoneNum) {
+        Parent.prototype.rename = function (name) {
             this.name = name;
-            this.address = address;
-            this.phoneNum = phoneNum;
         }
 
-        Me.prototype.canWalk = function () {
-            console.log('재현이가 걷는다.');
+        Parent.prototype.sayName = function () {
+            console.log(this.name);
         }
 
-        Me.prototype.teaching = function (student) {
-            student.levelUp();
+        function Child() {
+            Parent.call(this);
         }
 
-        function Student(level) {
-            this.level = level;
-        }
-
-        Student.prototype.levelUp = function () {
-            this.level++;
+        Child.prototype = Object.create(Parent.prototype);
+        Child.prototype.canWalk = function () {
+            console.log('걷는다!!');
         }
 
     </script>

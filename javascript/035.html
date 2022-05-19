@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -9,32 +9,34 @@
 </head>
 
 <body>
+    <!-- 앵커의 기본 동작을 중지 -->
+    <!-- <a href="" class="link">네이버 링크입니다만..</a>
+    <script>
+        const link = document.querySelector('.link');
+        link.addEventListener('click', (event) => {
+            console.log('clicked');
+            event.preventDefault();
+        })
+    </script> -->
+    <!-- submit 의 기본 동작을 중지 -->
+    <form action="">
+        <button type="submit" class="submit">제출</button>
+    </form>
 
     <script>
-        class Todo{
-            constructor(content, state){
-                this.content = content;
-                this.state = state;
-            }
-            changeState(){
-                this.state = !this.state;
-            }
-        }
+        // const submit = document.querySelector('.submit');
+        // submit.addEventListener('click', (event) => {
+        //     console.log('clicked');
+        //     event.preventDefault();
 
-        class TodoManager{
-            constructor(){
-                this.todoList = [];
-            }
-            addItem(content){
-                this.todoList.push(new Todo(content, false));
-            }
-            getItems(){
-                return this.todoList;
-            }
-            getLeftTodoCount(){
-                return this.todoList.filter(x => !x.state).length;
-            }
-        }
+        // })
+
+        window.addEventListener('', (event) => {
+            alert('오른쪽 클릭이 제한됩니다!');
+            event.preventDefault();
+
+        })
     </script>
+</body>
 
 </html>
