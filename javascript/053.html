@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 200px;
+        }
+
+        #box{
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            /* transition: transform .1s; */
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+    <div id="box"></div>
+    <script>
+        const box = document.querySelector("#box");
+        let pos = 0;
+        let keys = {};
+
+        const move = (e) => {
+            keys[e.key] = true;
+        };
+
+        const stop = (e) => {
+            keys[e.key] = false;
+        };
+
+        document.addEventListener("keydown", move);
+        document.addEventListener("keyup", stop);
+
+        const play = () => {
+            if(keys.ArrowLeft){
+                pos -= 5;
+                box.style.transform = `translateX(${pos}px)`;
+            }
+            if(keys.ArrowRight){
+                pos += 5;
+                box.style.transform = `translateX(${pos}px)`;
+            }
+            window.requestAnimationFrame(play);
+        };
+
+        window.requestAnimationFrame(play);
+
+        // const move = (e) => {
+        //     const keyName = e.key;
+        //     if(keyName == "ArrowLeft"){
+        //         pos -= 5;
+        //         box.style.transform = `translateX(${pos}px)`;
+        //     }
+        //     if(keyName == "ArrowRight"){
+        //         pos += 5;
+        //         box.style.transform = `translateX(${pos}px)`;
+        //     }
+        // };
+
+        // document.addEventListener("keydown", move);
+
+    </script>
+</body>
+
+</html>
