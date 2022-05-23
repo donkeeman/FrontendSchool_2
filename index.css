@@ -59,7 +59,7 @@ h3{
     margin: 0 1%;
 }
 
-.reportList li a, .reportList li a:visited{
+.reportList li, .reportList li a:visited{
     padding: 5px;
     font-weight: medium;
     color: #40B040;
