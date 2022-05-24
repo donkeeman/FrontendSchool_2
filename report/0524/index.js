@@ -19,7 +19,7 @@ if("noteList" in localStorage){
 }
 
 saveButton.addEventListener("click", () => {
-    let now = `${new Date().getMonth()+1}/${new Date().getDate()} ${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`;
+    let now = timeFormat(new Date());
     note.push(now + notepad.value);
     listUpdate();
     notepad.value = "";
@@ -31,9 +31,7 @@ clearButton.addEventListener("click", () => {
 
 deleteButton.addEventListener("click", () => {
     if(confirm("모든 메모를 삭제하시겠습니까?")){
-        localStorage.removeItem("noteList");
-        noteList.innerHTML = "";
-        note = [];
+        deleteAll();
     }
 });
 
@@ -52,7 +50,7 @@ function createNote(data) {
     closeButton.classList.add("closeButton");
     closeButton.innerText = "×";
     closeButton.addEventListener("click", (e) => {
-        deleteNote(e);
+        deleteOne(e);
     });
     let timeInpo = document.createElement("p");
     timeInpo.classList.add("timeInpo");
@@ -65,15 +63,27 @@ function createNote(data) {
     noteList.appendChild(noteEl);
 }
 
-function deleteNote(e) {
+function deleteOne(e) {
     if(confirm("메모를 삭제하시겠습니까?")){
-        note.splice(note.indexOf(e.currentTarget.parentElement.innerText.replace("×\n", "")), 1);
+        note.splice(note.indexOf(e.currentTarget.parentElement.parentElement.innerText.replace(/[×\n]/g, "")), 1);
         if(note.length === 0){
-            localStorage.removeItem("noteList");
-            noteList.innerHTML = "";
+            deleteAll();
         }
         else{
             listUpdate();
         }
     }
+}
+
+function deleteAll(){
+    localStorage.removeItem("noteList");
+    noteList.innerHTML = "";
+}
+
+function timeFormat(time){
+    return `${zeroPad(time.getMonth()+1)}/${zeroPad(time.getDate())} ${zeroPad(time.getHours())}:${zeroPad(time.getMinutes())}:${zeroPad(time.getSeconds())}`;
+}
+
+function zeroPad(time){
+    return ("0"+time).slice(-2);
 }
