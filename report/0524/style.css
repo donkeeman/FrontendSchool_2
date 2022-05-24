@@ -35,6 +35,7 @@ body{
     width: 50%;
     box-sizing: border-box;
     background-color: lightskyblue;
+    padding: .4rem;
 }
 
 #notepad{
@@ -60,21 +61,25 @@ body{
     width: 50%;
     list-style: none;
     font-size: 1.2rem;
-    display: grid;
-    grid-template-columns: auto auto auto;
     overflow: hidden;
-    gap: .4rem;
+    padding: .4rem;
 }
 
 .noteList li{
+    float: left;
     background-color: yellowgreen;
     padding: .4rem;
+    width: 100px;
+    height: 100px;
+    margin: .4rem;
+    text-overflow: ellipsis;
+    word-break: break-all;
 }
 
 .closeButton, .closeButton:focus, .closeButton:active, .closeButton:hover{
     float: right;
+    margin-left: .4rem;
     text-align: right;
-    font-size: .8rem;
-    background-color: white;
+    font-size: 1rem;
     cursor: pointer;
 }
