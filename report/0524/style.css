@@ -1,0 +1,80 @@
+/* reset */
+
+body, section, article, div, ul, ul li{
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+}
+
+button, button:focus, button:active, button:hover{
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+/* design */
+
+body{
+    font-size: 10px;
+}
+
+.mainSection{
+    background-color: gray;
+    margin: 1.6rem;
+    display: flex;
+}
+
+.mainHeader{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.writeContainer{
+    width: 50%;
+    box-sizing: border-box;
+    background-color: lightskyblue;
+}
+
+#notepad{
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#notepad::placeholder{
+    font-style: italic;
+}
+
+.button, .button:focus, .button:active, .button:hover{
+    width: 100%;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    padding: .6rem 1rem;
+    cursor: pointer;
+    margin: .2rem 0;
+}
+
+.noteList{
+    width: 50%;
+    list-style: none;
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    overflow: hidden;
+    gap: .4rem;
+}
+
+.noteList li{
+    background-color: yellowgreen;
+    padding: .4rem;
+}
+
+.closeButton, .closeButton:focus, .closeButton:active, .closeButton:hover{
+    float: right;
+    text-align: right;
+    font-size: .8rem;
+    background-color: white;
+    cursor: pointer;
+}
