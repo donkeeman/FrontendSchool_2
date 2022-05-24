@@ -19,7 +19,8 @@ if("noteList" in localStorage){
 }
 
 saveButton.addEventListener("click", () => {
-    note.push(notepad.value);
+    let now = `${new Date().getMonth()+1}/${new Date().getDate()} ${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`;
+    note.push(now + notepad.value);
     listUpdate();
     notepad.value = "";
 });
@@ -32,6 +33,7 @@ deleteButton.addEventListener("click", () => {
     if(confirm("모든 메모를 삭제하시겠습니까?")){
         localStorage.removeItem("noteList");
         noteList.innerHTML = "";
+        note = [];
     }
 });
 
@@ -41,15 +43,25 @@ function listUpdate(){
     localStorage.getItem("noteList").split(",").forEach((content) => {createNote(content)});
 }
 
-function createNote(content) {
+function createNote(data) {
+    let date = data.match(/(\d{1,2}\/\d{1,2} \d{1,2}\:\d{1,2}\:\d{1,2})/g);
     let noteEl = document.createElement("li");
+    let div = document.createElement("div");
+    div.classList.add("upper");
     let closeButton = document.createElement("button");
     closeButton.classList.add("closeButton");
     closeButton.innerText = "×";
     closeButton.addEventListener("click", (e) => {
         deleteNote(e);
     });
-    noteEl.append(closeButton, content);
+    let timeInpo = document.createElement("p");
+    timeInpo.classList.add("timeInpo");
+    timeInpo.innerText = date;
+    let content = document.createElement("p");
+    content.classList.add("content");
+    content.innerText = data.replace(/(\d{1,2}\/\d{1,2} \d{1,2}\:\d{1,2}\:\d{1,2})/g, "");
+    div.append(timeInpo, closeButton);
+    noteEl.append(div, content);
     noteList.appendChild(noteEl);
 }
 

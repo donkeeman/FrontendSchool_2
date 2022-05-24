@@ -1,6 +1,6 @@
 /* reset */
 
-body, section, article, div, ul, ul li{
+body, section, article, div, ul, ul li, p{
     margin: 0;
     padding: 0;
     font-size: inherit;
@@ -34,7 +34,6 @@ body{
 .writeContainer{
     width: 50%;
     box-sizing: border-box;
-    background-color: lightskyblue;
     padding: .4rem;
 }
 
@@ -60,7 +59,6 @@ body{
 .noteList{
     width: 50%;
     list-style: none;
-    font-size: 1.2rem;
     overflow: hidden;
     padding: .4rem;
 }
@@ -70,16 +68,25 @@ body{
     background-color: yellowgreen;
     padding: .4rem;
     width: 100px;
-    height: 100px;
+    height: 120px;
     margin: .4rem;
+    overflow: hidden;
+}
+
+.content{
+    font-size: 1.2rem;
+    overflow: hidden;
     text-overflow: ellipsis;
     word-break: break-all;
 }
 
+.upper{
+    font-size: .2rem;
+}
+
 .closeButton, .closeButton:focus, .closeButton:active, .closeButton:hover{
     float: right;
-    margin-left: .4rem;
-    text-align: right;
     font-size: 1rem;
     cursor: pointer;
+    margin-top: -.9rem;
 }
