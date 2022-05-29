@@ -9,6 +9,11 @@
     padding: 10px;
 }
 
+[contentEditable=true]:empty:not(:focus)::before{
+    content:attr(data-text);
+    color: lightgray;
+}
+
 .options{
     display: flex;
     padding: 8px;
