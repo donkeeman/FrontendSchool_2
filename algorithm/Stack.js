@@ -17,5 +17,4 @@ class Stack{
     bottom(){
         return this.arr[0];
     }
-
 }
