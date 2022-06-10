@@ -1,0 +1,9 @@
+.navList{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.list {
+    cursor: pointer;
+}
