@@ -31,16 +31,16 @@
 }
 
 /* 좋아요 버튼 */
-/* .like-btn {
+.like-btn {
     width: 22px;
     height: 22px;
     border: none;
-    background: url(../assets/icon-heart.svg) no-repeat center / contain;
+    background: url(../../assets/icon-heart.svg) no-repeat center / contain;
 }
 
 .like-btn.on {
-    background: url(../assets/icon-heart-on.svg) no-repeat center / contain;
-} */
+    background: url(../../assets/icon-heart-on.svg) no-repeat center / contain;
+}
 
 /* 상품 목록 페이지 */
 .product-list {

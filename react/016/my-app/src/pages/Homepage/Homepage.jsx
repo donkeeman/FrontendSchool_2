@@ -5,7 +5,7 @@ import './homePage.css'
 export default function HomePage() {
   return (
     <main class="product">
-        <ul class="product-list">
+        <ul className="product-list">
         {data.map(item => 
                 <ProductCard
                     key={item.id} 
