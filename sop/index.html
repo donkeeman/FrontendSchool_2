@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>hello sop!!</h1>
+
+    <iframe src="test.html" frameborder="0"></iframe>
+
+    <iframe width="1424" height="652" src="https://www.youtube.com/embed/4TWR90KJl84" title="aespa 에스파 'Next Level' MV"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+        <script>
+            const x = document.querySelector(".test");
+            const y = document.querySelector(".youtube");
+
+            x.onload = () => {
+                console.log("same origin: ", x.contentDocument);
+            }
+            y.onload = () => {
+                console.log("other origin: " + y.contentDocument);
+            }
+            </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: royalblue;
+    position: relative;
+}
+
+div:nth-child(1) {
+    animation: 5s move;
+}
+
+div:nth-child(2) {
+    background-color: lightgreen;
+    animation: 5s move2;
+}
+
+div:nth-child(3) {
+    background-color: burlywood;
+    animation: 5s move3;
+}
+
+@keyframes move {
+    from {
+        /* left: 0; */
+        transform: translateX(0);
+        background-color: royalblue;
+    }
+
+    to {
+        /* left: 100px; */
+        transform: translateX(100px);
+        background-color: red;
+    }
+}
+
+@keyframes move2 {
+    from {
+        /* left: 0; */
+        transform: translateX(0);
+        background-color: lightgreen;
+    }
+
+    to {
+        /* left: 100px; */
+        transform: translateX(200px);
+        background-color: green;
+    }
+}
+
+@keyframes move3 {
+    from {
+        /* left: 0; */
+        transform: translateX(0);
+        background-color: burlywood;
+    }
+
+    to {
+        /* left: 100px; */
+        transform: translateX(300px);
+        background-color: yellow;
+    }
+}
