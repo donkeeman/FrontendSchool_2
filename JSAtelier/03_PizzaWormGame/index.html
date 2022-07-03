@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+      }
+
+      #canvas {
+        border: 1px solid black;
+      }
+
+      #canvasBg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+    </style>
+    <title>My Cute Pizza Worm</title>
+  </head>
+  <body>
+    <canvas id="canvasBg" width="300" height="300"></canvas>
+    <canvas id="canvas" width="300" height="300"></canvas>
+    <script src="./tile.js"></script>
+    <script src="./pizza.js"></script>
+    <script src="./worm.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
