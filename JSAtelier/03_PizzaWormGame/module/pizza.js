@@ -1,3 +1,5 @@
+// import Tile from "./tile.js";
+
 class Pizza {
     constructor() {
         this.pos = new Tile(5, 5);

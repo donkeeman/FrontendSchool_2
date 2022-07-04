@@ -1,3 +1,5 @@
+// import Tile from "./tile.js";
+
 class Worm {
     constructor() {
         this.wormBody = [new Tile(13, 10), new Tile(13, 11), new Tile(13, 12)];
@@ -53,10 +55,9 @@ class Worm {
 
         // 피자를 먹는 로직
         if (newHead.collisionCheck(pizza.pos)) {
-            ctxBg.clearRect(0, 0, cWdith, cHeight);
-            ctxBg.clearRect(0, 0, cWdith, cHeight);
-            movePizza();
+            ctxBg.clearRect(0, 0, cWidth, cHeight);
             score++;
+            pizza.movePizza();
         } else {
             this.wormBody.pop();
         }

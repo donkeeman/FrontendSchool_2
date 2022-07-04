@@ -1,3 +1,5 @@
+// import {tileSize} from "../main.js";
+
 class Tile {
     constructor(col, row) {
         this.col = col;
