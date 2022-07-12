@@ -1,0 +1,36 @@
+.signup_form {
+    width: 360px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.signup_form legend {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.signup_form label {
+    display: block;
+    margin: 30px auto;
+}
+
+.signup_form input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 6px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.signup_form button {
+    margin-top: 40px;
+    float: right;
+    background-color: teal;
+    padding: 6px 12px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
