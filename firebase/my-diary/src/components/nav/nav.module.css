@@ -1,5 +1,5 @@
 .nav {
-    background-color: green;
+    background-color: olivedrab;
     padding: 20px 10px;
 }
 
@@ -17,4 +17,13 @@
     margin-right: 20px;
     color: white;
     text-decoration: none;
+}
+
+.nav button{
+    padding: 6px 12px;
+    border-radius: 10px;
+    background-color: olivedrab;
+    border: none;
+    color: white;
+    cursor: pointer;
 }
